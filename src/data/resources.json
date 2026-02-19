@@ -1,0 +1,473 @@
+{
+  "categories": [
+    {
+      "id": "calendars",
+      "label": "Calendars & Schedules",
+      "icon": "calendar",
+      "resources": [
+        {
+          "id": "kitzur-yomi",
+          "title": "Kitzur Shulchan Aruch Yomi Schedule",
+          "description": "Daily learning schedule for Kitzur Shulchan Aruch",
+          "url": "https://www.hakhel.info/archivesPublicService/KitzurShulchanAruchYomiSchedule.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "mishnayos-chart",
+          "title": "Limud Mishnayos Chart",
+          "description": "Organized Mishnah study tracking schedule",
+          "url": "https://www.hakhel.info/archivesPublicService/LimudMishnayosChart.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "daf-halacha",
+          "title": "Daf Yomi B'Halacha Schedule",
+          "description": "Daily halacha learning program schedule",
+          "url": "https://www.hakhel.info/archivesPublicService/DafHayomiBHalacha.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "daily-schedule",
+          "title": "Daily Learning Schedule 5780",
+          "description": "Multi-track daily learning calendar for 5780",
+          "url": "https://www.hakhel.info/archivesPublicService/LearningCalendarYomi5780.pdf",
+          "fileType": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "tables",
+      "label": "Reference Tables",
+      "icon": "table",
+      "resources": [
+        {
+          "id": "halachic-measures",
+          "title": "Talmudic Measurements & Currency",
+          "description": "Reference guide for halachic measurements and currency",
+          "url": "https://www.hakhel.info/archivesPublicService/HalachicMeasures.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "davening-location",
+          "title": "Prohibited Areas Around Davening",
+          "description": "Guidelines for proper prayer location requirements",
+          "url": "https://www.hakhel.info/archivesPublicService/MispallelLocationChart.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "karbonos-chart",
+          "title": "Chart of Karbonos",
+          "description": "Visual reference chart of Temple offerings",
+          "url": "https://www.hakhel.info/archivesPublicService/KarbanosChart.JPG",
+          "fileType": "jpg"
+        }
+      ]
+    },
+    {
+      "id": "tefillah",
+      "label": "Tefillah Aids & Kavanos",
+      "icon": "heart",
+      "resources": [
+        {
+          "id": "kaddish-english",
+          "title": "Kaddish Card (English)",
+          "description": "English Kaddish reference card with transliteration",
+          "url": "https://www.hakhel.info/archivesPublicService/KaddishFlyer-English.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "kaddish-hebrew",
+          "title": "Kaddish Card (Hebrew)",
+          "description": "Hebrew Kaddish reference card",
+          "url": "https://www.hakhel.info/archivesPublicService/KaddishFlyer-Hebrew.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "13-middos-english",
+          "title": "13 Attributes (English)",
+          "description": "Thirteen Attributes of Mercy in English",
+          "url": "https://www.hakhel.info/archivesPublicService/13MiddosEnglish.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "13-middos-hebrew",
+          "title": "13 Attributes (Hebrew)",
+          "description": "Thirteen Attributes of Mercy in Hebrew",
+          "url": "https://www.hakhel.info/archivesPublicService/13MiddosHebrew.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "vidui-ashamnu",
+          "title": "Vidui Breakdown (Ashamnu)",
+          "description": "Detailed breakdown of the Ashamnu confession",
+          "url": "https://www.hakhel.info/archivesPublicService/Ashamnu.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "amen-yehei",
+          "title": "Amen Yehei Shemei Rabbah",
+          "description": "Guide to proper Amen Yehei Shemei Rabbah response",
+          "url": "https://www.hakhel.info/archivesPublicService/AmenYeheiShemeiRabbah.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "amen-response",
+          "title": "Amen Response Guide",
+          "description": "Halachos and kavanos for answering Amen",
+          "url": "https://www.hakhel.info/archivesPublicService/AmeinResponse.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "kavanah-shemone-esrei",
+          "title": "Kavanah Poster for Shemone Esrei",
+          "description": "Visual kavanah aid for the Amidah prayer",
+          "url": "https://www.hakhel.info/archivesPublicService/KavanahImagery.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "kavanah-checklist",
+          "title": "Kavanah Checklist for Shemone Esrei",
+          "description": "Step-by-step checklist for Shemone Esrei focus",
+          "url": "https://www.hakhel.info/archivesPublicService/ShemoneEsreiChecklist.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "kavanah-bentching",
+          "title": "Kavanah Poster for Birchas HaMazon",
+          "description": "Visual kavanah guide for Grace After Meals",
+          "url": "https://www.hakhel.info/archivesPublicService/BentchingPoster.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "kavanah-shem-hashem",
+          "title": "Kavanah for Names of Hashem",
+          "description": "Guide to proper intention for Divine Names",
+          "url": "https://www.hakhel.info/archivesPublicService/KavanahforShemHashem.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "kavanos-shema",
+          "title": "Kavanos for Shema and Brochos",
+          "description": "Intentions for Shema and its blessings",
+          "url": "https://www.hakhel.info/archivesPublicService/KavanosforShemaBrocha.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-geulah-heb",
+          "title": "Tefillah for the Geulah (Hebrew)",
+          "description": "Hebrew prayer for the Final Redemption",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillahAlHaGeulah.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-geulah-eng",
+          "title": "Tefillah for the Geulah (English)",
+          "description": "English prayer for the Final Redemption",
+          "url": "https://www.hakhel.info/archivesPublicService/PrayerfortheGeulahEnglish.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-lashon",
+          "title": "Tefillah for Shmiros HaLashon",
+          "description": "Chofetz Chaim's prayer for guarding speech",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillasChofetzChaim.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-parnassah",
+          "title": "Tefillah for Parnassah (Shlah)",
+          "description": "Shlah HaKodesh prayer for livelihood",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillaAlHaParnassa.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-parents",
+          "title": "Tefillah for Parents (Chazon Ish)",
+          "description": "Chazon Ish prayer for parents on behalf of children",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillasChazonIsh.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-hashlah",
+          "title": "Tefillah HaShlah HaKodesh",
+          "description": "Classic Shlah prayer for children's success",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillasHaShlah.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-lost",
+          "title": "Tefillah for Finding Lost Objects",
+          "description": "Prayer to help recover lost items",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillahLostObjects.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-anger",
+          "title": "Tefillah to Prevent Anger",
+          "description": "Prayer for controlling anger and frustration",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillahKaas.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-teshuvah",
+          "title": "Tefillah for Teshuvah",
+          "description": "Prayer for sincere repentance and return",
+          "url": "https://www.hakhel.info/archivesPublicService/TeshuvahTefillah.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-emunah",
+          "title": "Tefillah for Emunah and Bitachon",
+          "description": "Prayer for strengthening faith and trust in Hashem",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillahforEmunahandBitachon.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-doctor",
+          "title": "Tefillah Before Doctor Visit",
+          "description": "Prayer to say before visiting a physician",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillahBeforeVisitingDoctor.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-cemetery",
+          "title": "Tefillah at the Cemetery",
+          "description": "Prayers for visiting the cemetery",
+          "url": "https://www.hakhel.info/archivesPublicService/PrayerCemetery.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-chanukah",
+          "title": "Tefillah Before Chanukah Candles",
+          "description": "Prayer recited before lighting the menorah",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillahBeforeMenorahLighting.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-tu-bshevat",
+          "title": "Tefillah for Tu B'Shevat",
+          "description": "Special prayer for the New Year of Trees",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillahforTuBShevat.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillah-thanks",
+          "title": "Tefillah of Thanks",
+          "description": "Prayer expressing gratitude to Hashem",
+          "url": "https://www.hakhel.info/archivesPublicService/ThankYouTefillah.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "bitachon-pesukim",
+          "title": "Pesukim of Bitachon",
+          "description": "Collection of Torah verses on trust in Hashem",
+          "url": "https://www.hakhel.info/archivesPublicService/PesukimBitachon.pdf",
+          "fileType": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "archives",
+      "label": "Hakhel Archives",
+      "icon": "archive",
+      "resources": [
+        {
+          "id": "shemoneh-esrei-series",
+          "title": "Shemoneh Esrei Series",
+          "description": "In-depth study of each Amidah blessing",
+          "url": "https://www.hakhel.info/TefillahArchive.html",
+          "fileType": "html"
+        },
+        {
+          "id": "landmarks",
+          "title": "Landmarks in Shemoneh Esrei",
+          "description": "Structural guide to the Amidah prayer",
+          "url": "https://www.hakhel.info/archivesPublicService/LandMarks.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "bishul-test",
+          "title": "Rabbi Webster's Bishul Test",
+          "description": "Test your knowledge of cooking halachos",
+          "url": "https://www.hakhel.info/RabbiWebsterBishulTest.html",
+          "fileType": "html"
+        },
+        {
+          "id": "brochos-shailos",
+          "title": "Rabbi Bodner's Brochos Shailos",
+          "description": "Common questions on blessings over food",
+          "url": "https://www.hakhel.info/RabbiBodnerDailyArchive.html",
+          "fileType": "html"
+        },
+        {
+          "id": "lashon-shidduchim",
+          "title": "Shemiras HaLashon in Shidduchim",
+          "description": "Proper speech guidelines during matchmaking",
+          "url": "https://www.hakhel.info/ShidduchQuestionsArchive.html",
+          "fileType": "html"
+        },
+        {
+          "id": "word-on-words",
+          "title": "A Word on Words",
+          "description": "Series on the power of language and speech",
+          "url": "https://www.hakhel.info/WordsDailyArchive.html",
+          "fileType": "html"
+        },
+        {
+          "id": "anavah",
+          "title": "Middah of Anavah",
+          "description": "Study of the trait of humility",
+          "url": "https://www.hakhel.info/archivesPublicService/Le'AnavimYiteinChein.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "al-cheit",
+          "title": "Al Cheit Explained",
+          "description": "Detailed explanation of Yom Kippur confessions",
+          "url": "https://www.hakhel.info/archivesPublicService/AhlCheitArchives.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "hilchos-sukkah",
+          "title": "Hilchos Sukkah",
+          "description": "Comprehensive guide to Sukkah halachos",
+          "url": "https://www.hakhel.info/archivesPublicService/HilchosSukkah.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "mitzvos-hakatzar",
+          "title": "Sefer HaMitzvos HaKatzar",
+          "description": "Concise listing of applicable mitzvos today",
+          "url": "https://www.hakhel.info/SeferMitzvosHaKatzar.html",
+          "fileType": "html"
+        },
+        {
+          "id": "bein-adam",
+          "title": "Bein Adam L'Chaveiro",
+          "description": "Guide to interpersonal mitzvos and ethics",
+          "url": "https://www.hakhel.info/archivesPublicService/HizharuBichvodChaveireichem.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "13-middos-salanter",
+          "title": "13 Middos of Rav Yisroel Salanter",
+          "description": "Character trait framework from Rav Salanter",
+          "url": "https://www.hakhel.info/archivesPublicService/RavSalanter13Middos.pdf",
+          "fileType": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "guidelines",
+      "label": "Guidelines",
+      "icon": "clipboard",
+      "resources": [
+        {
+          "id": "shidduch-speech",
+          "title": "Shidduch Guidelines for Speech",
+          "description": "Proper speech guidelines during the shidduch process",
+          "url": "https://www.hakhel.info/archivesPublicService/ShidduchGuidelinesforLH.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "six-mitzvos",
+          "title": "Six Constant Mitzvos",
+          "description": "Overview of the six mitzvos that apply at all times",
+          "url": "https://www.hakhel.info/archivesPublicService/SixConstantMitzvos.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "six-mitzvos-poster",
+          "title": "Six Constant Mitzvos Poster",
+          "description": "Printable poster of the six constant mitzvos",
+          "url": "https://www.hakhel.info/archivesPublicService/SixConstantMitzvosPoster.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "happiness",
+          "title": "Happiness Principles (R' Pliskin)",
+          "description": "Rabbi Pliskin's principles for achieving happiness",
+          "url": "https://www.hakhel.info/archivesPublicService/HappinessPrinciples.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "lashon-rules",
+          "title": "Ten Rules for Shemiras HaLoshon",
+          "description": "Essential rules for guarding one's speech",
+          "url": "https://www.hakhel.info/archivesPublicService/CCHFTenRules.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "lashon-workplace",
+          "title": "Shemiras HaLoshon at Work/School",
+          "description": "Speech guidelines for workplace and school settings",
+          "url": "https://www.hakhel.info/archivesPublicService/LHWorkplace.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "fire-safety",
+          "title": "Fire Safety for Jewish Observances",
+          "description": "Safety tips for candle lighting and Yom Tov",
+          "url": "https://www.hakhel.info/archivesPublicService/SafetyInfo.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "kashrus-summer",
+          "title": "Summer Kashrus Reminders",
+          "description": "Seasonal kashrus tips for summer months",
+          "url": "https://www.hakhel.info/archivesPublicService/SummerKashrusReminders.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "kaporos",
+          "title": "Kaporos Guidelines",
+          "description": "Proper guidelines for performing Kaporos",
+          "url": "https://www.hakhel.info/archivesPublicService/KICKaporosSuggestions.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "brachos-cereals",
+          "title": "Brachos on Breakfast Cereals",
+          "description": "Which blessings to say on common cereals",
+          "url": "https://www.hakhel.info/archivesPublicService/CerealsBrachosList.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tevilas-keilim",
+          "title": "Tevilas Keilim Guidelines",
+          "description": "Halachos of immersing utensils in a mikvah",
+          "url": "https://www.hakhel.info/archivesCABs/HAKHELCOMMUNITYAWARENESSBULLETINSpecialEditionPesach5765.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "eruv-tavshilin",
+          "title": "Eruv Tavshilin Guidelines",
+          "description": "How to properly prepare an Eruv Tavshilin",
+          "url": "https://www.hakhel.info/archivesCABs/HAKHELCOMMUNITYAWARENESSBULLETINSpecialEdition Eruv.pdf",
+          "fileType": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "tefillin",
+      "label": "Kedushas Tefillin",
+      "icon": "book",
+      "resources": [
+        {
+          "id": "tefillin-newsletter",
+          "title": "Kedushas Tefillin Newsletter",
+          "description": "Newsletter on the sanctity and laws of Tefillin",
+          "url": "https://www.hakhel.info/archivesPublicService/KedushasTefillinIssue1.pdf",
+          "fileType": "pdf"
+        },
+        {
+          "id": "tefillin-card",
+          "title": "Tefillin Card",
+          "description": "Quick reference card for Tefillin halachos",
+          "url": "https://www.hakhel.info/archivesPublicService/TefillinCard.pdf",
+          "fileType": "pdf"
+        }
+      ]
+    }
+  ]
+}

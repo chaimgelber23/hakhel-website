@@ -1,0 +1,310 @@
+{
+  "years": [
+    {
+      "year": 2020,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan20DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb20DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March20DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2019,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan19DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb19DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March19DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April19DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May19DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June19DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July19DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug19DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept19DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct19DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov19DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec19DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2018,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan18DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb18DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March18DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April18DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May18DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June18DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July18DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug18DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept18DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct18DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov18DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec18DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2017,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan17DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb17DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March17DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April17DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May17DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June17DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July17DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug17DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept17DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct17DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov17DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec17DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2016,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan16DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb16DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March16DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April16DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May16DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June16DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July16DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug16DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept16DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct16DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov16DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec16DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2015,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan15DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb15DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March15DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April15DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May15DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June15DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July15DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug15DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept15DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct15DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov15DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec15DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2014,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan14DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb14DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March14DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April14DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May14DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June14DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July14DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug14DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept14DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct14DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov14DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec14DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2013,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan13DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb13DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March13DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April13DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May13DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June13DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July13DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug13DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept13DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct13DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov13DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec13DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2012,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan12DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb12DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March12DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April12DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May12DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June12DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July12DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug12DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept12DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct12DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov12DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec12DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2011,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan11DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb11DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March11DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April11DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May11DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June11DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July11DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug11DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept11DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct11DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov11DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec11DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2010,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan10DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb10DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March10DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April10DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May10DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June10DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July10DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug10DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept10DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct10DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov10DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec10DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2009,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan09DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb09DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March09DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April09DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May09DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June09DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July09DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug09DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept09DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct09DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov09DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec09DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2008,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan08DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb08DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March08DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April08DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May08DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June08DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July08DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug08DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept08DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct08DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov08DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec08DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2007,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan07DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb07DailyEmail.htm" },
+        { "month": "March", "url": "https://www.hakhel.info/March07DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April07DailyEmail.htm" },
+        { "month": "May", "url": "https://www.hakhel.info/May07DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June07DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July07DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug07DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept07DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct07DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov07DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec07DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2006,
+      "months": [
+        { "month": "January", "url": "https://www.hakhel.info/Jan06DailyEmail.html" },
+        { "month": "February", "url": "https://www.hakhel.info/Feb06DailyEmail.html" },
+        { "month": "March", "url": "https://www.hakhel.info/March06DailyEmail.html" },
+        { "month": "April", "url": "https://www.hakhel.info/April06DailyEmail.html" },
+        { "month": "May", "url": "https://www.hakhel.info/May06DailyEmail.html" },
+        { "month": "June", "url": "https://www.hakhel.info/June06DailyEmail.html" },
+        { "month": "July", "url": "https://www.hakhel.info/July06DailyEmail.html" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug06DailyEmail.html" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept06DailyEmail.html" },
+        { "month": "October", "url": "https://www.hakhel.info/Oct06DailyEmail.html" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov06DailyEmail.html" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec06DailyEmail.html" }
+      ]
+    },
+    {
+      "year": 2005,
+      "months": [
+        { "month": "July", "url": "https://www.hakhel.info/July05DailyEmail.htm" },
+        { "month": "August", "url": "https://www.hakhel.info/Aug05DailyEmail.htm" },
+        { "month": "September", "url": "https://www.hakhel.info/Sept05DailyEmail.htm" },
+        { "month": "November", "url": "https://www.hakhel.info/Nov05DailyEmail.htm" },
+        { "month": "December", "url": "https://www.hakhel.info/Dec05DailyEmail.htm" }
+      ]
+    }
+  ],
+  "specialCollections": [
+    {
+      "id": "48-ways",
+      "title": "48 Ways to Wisdom",
+      "description": "Weekly character development series",
+      "url": "https://www.hakhel.info/48WaysArchives.html"
+    },
+    {
+      "id": "tefillah",
+      "title": "Tefillah Archives",
+      "description": "Shemoneh Esrei study series",
+      "url": "https://www.hakhel.info/TefillahArchive.html"
+    },
+    {
+      "id": "bishul-test",
+      "title": "Rabbi Webster's Bishul Test",
+      "description": "Cooking halacha knowledge test",
+      "url": "https://www.hakhel.info/RabbiWebsterBishulTest.html"
+    },
+    {
+      "id": "brochos",
+      "title": "Rabbi Bodner's Brochos Shailos",
+      "description": "Common blessing questions and answers",
+      "url": "https://www.hakhel.info/RabbiBodnerDailyArchive.html"
+    },
+    {
+      "id": "shidduch-speech",
+      "title": "Shemiras HaLashon in Shidduchim",
+      "description": "Proper speech during matchmaking",
+      "url": "https://www.hakhel.info/ShidduchQuestionsArchive.html"
+    },
+    {
+      "id": "words",
+      "title": "A Word on Words",
+      "description": "Language discussion series",
+      "url": "https://www.hakhel.info/WordsDailyArchive.html"
+    },
+    {
+      "id": "mitzvos",
+      "title": "Sefer HaMitzvos HaKatzar",
+      "description": "Concise listing of applicable mitzvos",
+      "url": "https://www.hakhel.info/SeferMitzvosHaKatzar.html"
+    },
+    {
+      "id": "al-cheit",
+      "title": "Al Cheit Explained",
+      "description": "Yom Kippur confessions explained",
+      "url": "https://www.hakhel.info/archivesPublicService/AhlCheitArchives.pdf"
+    }
+  ]
+}

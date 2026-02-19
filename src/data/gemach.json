@@ -1,0 +1,852 @@
+{
+  "categories": [
+    { "id": "support", "label": "Support Groups" },
+    { "id": "hotlines", "label": "Hotlines & Advice" },
+    { "id": "services", "label": "Services" },
+    { "id": "medical", "label": "Medical Equipment" },
+    { "id": "baby-bris", "label": "Baby - Bris & Pidyon" },
+    { "id": "baby-equipment", "label": "Baby Equipment" },
+    { "id": "baby-preemie", "label": "Preemies & Multiples" },
+    { "id": "baby-clothing", "label": "Newborn Clothing" },
+    { "id": "baby-nursing", "label": "Nursing & Formula" },
+    { "id": "children", "label": "Children" },
+    { "id": "food", "label": "Food" },
+    { "id": "household", "label": "Household" },
+    { "id": "clothing", "label": "Clothing" },
+    { "id": "maternity", "label": "Maternity" },
+    { "id": "sheitels", "label": "Sheitels" },
+    { "id": "simcha-gowns", "label": "Simcha Gowns" },
+    { "id": "simcha-jewelry", "label": "Jewelry & Hairpieces" },
+    { "id": "simcha-shabbos", "label": "Shabbos & Yom Tov" },
+    { "id": "simcha-centerpieces", "label": "Centerpieces" },
+    { "id": "simcha-tablecloths", "label": "Tablecloths" },
+    { "id": "simcha-flowers", "label": "Flowers" },
+    { "id": "simcha-tables", "label": "Tables & Chairs" },
+    { "id": "simcha-misc", "label": "Simcha Misc" },
+    { "id": "wedding-gowns", "label": "Kallah Gowns" },
+    { "id": "wedding-makeup", "label": "Makeup" },
+    { "id": "wedding-headpieces", "label": "Headpieces" },
+    { "id": "wedding-shoes", "label": "Kallah Shoes" },
+    { "id": "wedding-capes", "label": "Kallah Capes" },
+    { "id": "wedding-chuppah", "label": "Chuppah" },
+    { "id": "wedding-shtick", "label": "Shtick" },
+    { "id": "wedding-misc", "label": "Wedding Misc" },
+    { "id": "money", "label": "Financial Assistance" },
+    { "id": "seforim", "label": "Seforim & Books" }
+  ],
+  "locations": [
+    { "id": "brooklyn", "label": "Brooklyn" },
+    { "id": "boro-park", "label": "Boro Park" },
+    { "id": "flatbush", "label": "Flatbush" },
+    { "id": "williamsburg", "label": "Williamsburg" },
+    { "id": "crown-heights", "label": "Crown Heights" },
+    { "id": "manhattan", "label": "Manhattan" },
+    { "id": "queens", "label": "Queens" },
+    { "id": "five-towns", "label": "Five Towns" },
+    { "id": "monsey", "label": "Monsey" },
+    { "id": "lakewood", "label": "Lakewood" },
+    { "id": "other", "label": "Other Areas" }
+  ],
+  "entries": [
+    {
+      "id": "puah",
+      "name": "American Friends of PUAH",
+      "description": "Infertility counseling and support",
+      "phone": "(718) 336-0603",
+      "category": "support",
+      "location": "brooklyn"
+    },
+    {
+      "id": "atime",
+      "name": "A.T.I.M.E.",
+      "description": "Medical referrals and support services",
+      "phone": "(718) 686-8912",
+      "category": "support",
+      "location": "brooklyn"
+    },
+    {
+      "id": "bina",
+      "name": "Bina Stroke/Brain Injury",
+      "description": "Referrals and guidance for brain injury",
+      "phone": "(718) 645-6400",
+      "category": "support",
+      "location": "brooklyn"
+    },
+    {
+      "id": "chai-lifeline",
+      "name": "Chai Lifeline",
+      "description": "General medical support for families",
+      "phone": "(212) 465-1300",
+      "category": "support",
+      "location": "manhattan"
+    },
+    {
+      "id": "mask",
+      "name": "MASK",
+      "description": "Family support and guidance programs",
+      "phone": "(718) 758-0400",
+      "category": "support",
+      "location": "brooklyn"
+    },
+    {
+      "id": "meoiros",
+      "name": "Meoiros",
+      "description": "Support for bereaved parents",
+      "phone": "(718) 624-7908",
+      "category": "support",
+      "location": "brooklyn"
+    },
+    {
+      "id": "our-tapestry",
+      "name": "Our Tapestry",
+      "description": "Support for loss of a child",
+      "phone": "(718) 438-6930",
+      "category": "support",
+      "location": "brooklyn"
+    },
+    {
+      "id": "zicharon",
+      "name": "Zicharon",
+      "description": "Alzheimer and dementia family support",
+      "phone": "(718) 534-1008",
+      "category": "support",
+      "location": "brooklyn"
+    },
+    {
+      "id": "bais-horaah",
+      "name": "Bais Horaah of Flatbush",
+      "description": "Emergency shailos available 10am-6:30pm",
+      "phone": "(718) 336-1375",
+      "category": "hotlines",
+      "location": "flatbush"
+    },
+    {
+      "id": "bitachon-hotline",
+      "name": "Bitachon Hotline",
+      "description": "Daily inspiration and support hotline",
+      "phone": "(929) 470-5577",
+      "category": "hotlines",
+      "location": "other"
+    },
+    {
+      "id": "chayim-aruchim",
+      "name": "Chayim Aruchim",
+      "description": "Guidance for serious illness decisions",
+      "phone": "(718) 278-2446",
+      "category": "hotlines",
+      "location": "brooklyn"
+    },
+    {
+      "id": "gemach-hotline",
+      "name": "Gemach Hotline",
+      "description": "Phone directory for locating gemachs",
+      "phone": "(718) 436-0678",
+      "category": "hotlines",
+      "location": "brooklyn"
+    },
+    {
+      "id": "ohel",
+      "name": "Ohel Helpline",
+      "description": "Professional counseling and crisis support",
+      "phone": "(800) 603-6435",
+      "category": "hotlines",
+      "location": "other"
+    },
+    {
+      "id": "zemanim",
+      "name": "Zemanim Hotline",
+      "description": "Shabbos and zmanim times by phone",
+      "phone": "(718) 331-8463",
+      "category": "hotlines",
+      "location": "brooklyn"
+    },
+    {
+      "id": "nishmoseinu",
+      "name": "Nishmoseinu",
+      "description": "Resources for special needs families",
+      "phone": "(718) 759-1111",
+      "category": "hotlines",
+      "location": "brooklyn"
+    },
+    {
+      "id": "chaveirim",
+      "name": "Chaveirim",
+      "description": "Volunteer roadside assistance service",
+      "phone": "(718) 431-8181",
+      "category": "services",
+      "location": "brooklyn"
+    },
+    {
+      "id": "free-legal",
+      "name": "Free Legal Services",
+      "description": "Help with SSI, food stamps, and Medicaid",
+      "phone": "(718) 377-2900",
+      "category": "services",
+      "location": "flatbush"
+    },
+    {
+      "id": "kashering",
+      "name": "Kashering Service",
+      "description": "Free kitchen koshering assistance",
+      "phone": "(718) 730-0224",
+      "category": "services",
+      "location": "brooklyn"
+    },
+    {
+      "id": "shomrim",
+      "name": "Shomrim",
+      "description": "Community safety patrol services",
+      "phone": "(718) 338-9797",
+      "category": "services",
+      "location": "flatbush"
+    },
+    {
+      "id": "tafkid",
+      "name": "Tafkid",
+      "description": "Programs for special needs individuals",
+      "phone": "(718) 252-2236",
+      "category": "services",
+      "location": "brooklyn"
+    },
+    {
+      "id": "bikur-cholim-bp",
+      "name": "Bikur Cholim Boro Park",
+      "description": "Hospital beds, wheelchairs, and equipment",
+      "phone": "(718) 438-2020",
+      "category": "medical",
+      "location": "boro-park"
+    },
+    {
+      "id": "chesed-flatbush",
+      "name": "Chesed of Flatbush",
+      "description": "Medical equipment and home care services",
+      "phone": "(929) 472-0000",
+      "category": "medical",
+      "location": "flatbush"
+    },
+    {
+      "id": "refuah",
+      "name": "Refuah Gemach",
+      "description": "Over-the-counter medicine available overnight",
+      "phone": "(718) 435-8266",
+      "category": "medical",
+      "location": "boro-park"
+    },
+    {
+      "id": "rccs",
+      "name": "RCCS",
+      "description": "Comprehensive cancer patient care support",
+      "phone": "(718) 722-2002",
+      "category": "medical",
+      "location": "brooklyn"
+    },
+    {
+      "id": "renewal",
+      "name": "Renewal",
+      "description": "Kidney donor matching and assistance",
+      "phone": "(718) 431-9831",
+      "category": "medical",
+      "location": "brooklyn"
+    },
+    {
+      "id": "yad-ephraim",
+      "name": "Yad Ephraim",
+      "description": "Kosher meals delivered to hospitals",
+      "phone": "(718) 431-0404",
+      "category": "medical",
+      "location": "boro-park"
+    },
+    {
+      "id": "bris-flatbush",
+      "name": "Bris Gemach Flatbush",
+      "description": "Pillow, outfits, and blanket for bris",
+      "phone": "(917) 838-2191",
+      "category": "baby-bris",
+      "location": "flatbush"
+    },
+    {
+      "id": "pidyon-tray",
+      "name": "Pidyon Haben Tray",
+      "description": "Real silver tray for Pidyon Haben",
+      "phone": "(718) 756-4946",
+      "category": "baby-bris",
+      "location": "crown-heights"
+    },
+    {
+      "id": "baby-carriers",
+      "name": "Baby Carriers",
+      "description": "Infant and toddler carrier lending",
+      "phone": "(718) 336-0212",
+      "category": "baby-equipment",
+      "location": "flatbush"
+    },
+    {
+      "id": "bassinet",
+      "name": "Bassinet Gemach",
+      "description": "Short-term bassinet and crib rental",
+      "phone": "(347) 228-9222",
+      "category": "baby-equipment",
+      "location": "boro-park"
+    },
+    {
+      "id": "bili-blanket",
+      "name": "Bili Blanket",
+      "description": "Jaundice treatment blanket for newborns",
+      "phone": "(718) 851-2500",
+      "category": "baby-equipment",
+      "location": "brooklyn"
+    },
+    {
+      "id": "car-seat-bubby",
+      "name": "Bubby's Car Seat",
+      "description": "Short-term car seat for grandchildren visits",
+      "phone": "(718) 338-1676",
+      "category": "baby-equipment",
+      "location": "flatbush"
+    },
+    {
+      "id": "doona",
+      "name": "Doona Gemach",
+      "description": "Car seat and stroller combo rental",
+      "phone": "(845) 548-6673",
+      "category": "baby-equipment",
+      "location": "brooklyn"
+    },
+    {
+      "id": "bike-gemach",
+      "name": "Bike Gemach",
+      "description": "Bicycle lending for children",
+      "phone": "(718) 338-5910",
+      "category": "children",
+      "location": "brooklyn"
+    },
+    {
+      "id": "costumes",
+      "name": "Disguise the Limit",
+      "description": "Costume gemach with small $5 fee",
+      "phone": "(718) 338-1676",
+      "category": "children",
+      "location": "flatbush"
+    },
+    {
+      "id": "tutoring",
+      "name": "Tutoring Gemach",
+      "description": "Discount tutoring in all subjects",
+      "phone": "(347) 962-1509",
+      "category": "children",
+      "location": "brooklyn"
+    },
+    {
+      "id": "kimperturin",
+      "name": "Kimperturin Lunches",
+      "description": "Hot lunches delivered to new mothers",
+      "phone": "(845) 796-1727",
+      "category": "food",
+      "location": "brooklyn"
+    },
+    {
+      "id": "nshei-chayil",
+      "name": "Nshei Chayil",
+      "description": "Hot suppers delivered to new mothers",
+      "phone": "(718) 964-8057",
+      "category": "food",
+      "location": "brooklyn"
+    },
+    {
+      "id": "stop-leftovers",
+      "name": "S.T.O.P.",
+      "description": "Simcha leftovers food exchange program",
+      "phone": "(347) 782-3940",
+      "category": "food",
+      "location": "brooklyn"
+    },
+    {
+      "id": "bins",
+      "name": "Bins Gemach",
+      "description": "Moving bins available for rental",
+      "phone": "(347) 374-6306",
+      "category": "household",
+      "location": "brooklyn"
+    },
+    {
+      "id": "flood",
+      "name": "Flood Gemach",
+      "description": "Dehumidifiers and wet vacs for emergencies",
+      "phone": "(347) 628-3109",
+      "category": "household",
+      "location": "brooklyn"
+    },
+    {
+      "id": "luggage",
+      "name": "Luggage Gemach",
+      "description": "Wheeled luggage lending with $20 deposit",
+      "phone": "(718) 336-9281",
+      "category": "household",
+      "location": "brooklyn"
+    },
+    {
+      "id": "mezuzah",
+      "name": "Mezuzah Gemach",
+      "description": "Mezuzah loans for those in need",
+      "phone": "(718) 376-5714",
+      "category": "household",
+      "location": "brooklyn"
+    },
+    {
+      "id": "sukkah-shadchan",
+      "name": "Sukkah Shadchan",
+      "description": "Matching unused sukkahs with those in need",
+      "phone": "(929) 447-7333",
+      "category": "household",
+      "location": "brooklyn"
+    },
+    {
+      "id": "chesed-center",
+      "name": "Chesed Center",
+      "description": "Free clothing pickup service",
+      "phone": "(347) 837-8256",
+      "category": "clothing",
+      "location": "brooklyn"
+    },
+    {
+      "id": "matan-mazel",
+      "name": "Matan Mazel",
+      "description": "Clothing at $5 per bag",
+      "phone": "(718) 871-0860",
+      "category": "clothing",
+      "location": "boro-park"
+    },
+    {
+      "id": "second-stitch",
+      "name": "Second Stitch",
+      "description": "New and like-new clothing for families",
+      "phone": "(646) 318-0071",
+      "category": "clothing",
+      "location": "brooklyn"
+    },
+    {
+      "id": "streimel",
+      "name": "Streimel Gemach",
+      "description": "Streimel hat lending service",
+      "phone": "(718) 851-2790",
+      "category": "clothing",
+      "location": "brooklyn"
+    },
+    {
+      "id": "bp-maternity",
+      "name": "Boro Park Maternity",
+      "description": "Shabbos and weekday maternity clothing",
+      "phone": "(718) 490-9886",
+      "category": "maternity",
+      "location": "boro-park"
+    },
+    {
+      "id": "flatbush-maternity",
+      "name": "Flatbush Maternity Clothing",
+      "description": "Gently used maternity clothing available",
+      "phone": "(347) 729-3747",
+      "category": "maternity",
+      "location": "flatbush"
+    },
+    {
+      "id": "bp-sheitel",
+      "name": "Boro Park Sheitel",
+      "description": "Good condition sheitels available",
+      "phone": "(314) 780-4583",
+      "category": "sheitels",
+      "location": "boro-park"
+    },
+    {
+      "id": "wig-gemach",
+      "name": "Wig Gemach",
+      "description": "Sheitels with multiple drop-off locations",
+      "phone": "(917) 474-4305",
+      "category": "sheitels",
+      "location": "other"
+    },
+    {
+      "id": "ohr-naava",
+      "name": "Ohr Naava Bridal",
+      "description": "Gowns, headpieces, and veils for kallahs",
+      "phone": "(646) 354-1151",
+      "category": "wedding-gowns",
+      "location": "flatbush"
+    },
+    {
+      "id": "likras-kallah",
+      "name": "Likras Kallah",
+      "description": "Wedding dress rental service",
+      "phone": "(718) 237-4272",
+      "category": "wedding-gowns",
+      "location": "williamsburg"
+    },
+    {
+      "id": "ten-yad",
+      "name": "Ten Yad Kallah",
+      "description": "Wedding dress rental for kallahs",
+      "phone": "(718) 756-1482",
+      "category": "wedding-gowns",
+      "location": "crown-heights"
+    },
+    {
+      "id": "makeup-1",
+      "name": "Makeup Gemach",
+      "description": "Professional makeup application service",
+      "phone": "(718) 986-1211",
+      "category": "wedding-makeup",
+      "location": "brooklyn"
+    },
+    {
+      "id": "makeup-bp",
+      "name": "Makeup Gemach BP",
+      "description": "Half price makeup application",
+      "phone": "(917) 426-7948",
+      "category": "wedding-makeup",
+      "location": "boro-park"
+    },
+    {
+      "id": "headpieces-1",
+      "name": "Kallah Headpiece Gemach",
+      "description": "Exquisite one-of-a-kind headpieces",
+      "phone": "(718) 998-5595",
+      "category": "wedding-headpieces",
+      "location": "brooklyn"
+    },
+    {
+      "id": "stunning-bridal",
+      "name": "Stunning Bridal Headpieces",
+      "description": "Wedding headpiece rental service",
+      "phone": "(718) 737-1844",
+      "category": "wedding-headpieces",
+      "location": "flatbush"
+    },
+    {
+      "id": "chuppah-tehillim",
+      "name": "Chuppah Tehillim Booklets",
+      "description": "500 laminated Tehillim booklets for chuppah",
+      "phone": "(718) 258-2462",
+      "category": "wedding-chuppah",
+      "location": "flatbush"
+    },
+    {
+      "id": "chuppah-portable",
+      "name": "Chuppah Gemach",
+      "description": "Small portable four-pole chuppah rental",
+      "phone": "(718) 253-0394",
+      "category": "wedding-chuppah",
+      "location": "brooklyn"
+    },
+    {
+      "id": "j-shtick",
+      "name": "J-Shtick",
+      "description": "Arches, parachute, umbrella, and more",
+      "phone": "(845) 826-6720",
+      "category": "wedding-shtick",
+      "location": "flatbush"
+    },
+    {
+      "id": "fantashtick",
+      "name": "Fantashtick",
+      "description": "All standard kallah shtick items available",
+      "phone": "(917) 309-1538",
+      "category": "wedding-shtick",
+      "location": "lakewood"
+    },
+    {
+      "id": "hebrew-free-loan",
+      "name": "Hebrew Free Loan Society",
+      "description": "Loans up to $7,500 plus business loans",
+      "phone": "(212) 687-0188",
+      "category": "money",
+      "location": "manhattan"
+    },
+    {
+      "id": "flatbush-fund",
+      "name": "Flatbush Community Fund",
+      "description": "Community financial aid assistance",
+      "phone": "(718) 650-3545",
+      "category": "money",
+      "location": "flatbush"
+    },
+    {
+      "id": "zichron-tova",
+      "name": "Gemach Zichron Tova",
+      "description": "Interest-free loans up to $5,000",
+      "phone": "(718) 614-6789",
+      "category": "money",
+      "location": "brooklyn"
+    },
+    {
+      "id": "yad-batya",
+      "name": "Yad Batya L'Kallah",
+      "description": "Financial aid for wedding expenses",
+      "phone": "(845) 425-1846",
+      "category": "money",
+      "location": "other"
+    },
+    {
+      "id": "book-gemach",
+      "name": "Book Gemach",
+      "description": "English Judaica books for prisons",
+      "phone": "(718) 436-3214",
+      "category": "seforim",
+      "location": "brooklyn"
+    },
+    {
+      "id": "torah-tapes",
+      "name": "Torah Tapes",
+      "description": "Tapes, MP3s, CDs, and iPods available",
+      "phone": "(718) 438-3904",
+      "category": "seforim",
+      "location": "brooklyn"
+    },
+    {
+      "id": "lkwd-bikur-cholim",
+      "name": "Bikur Cholim Lakewood",
+      "description": "Medical supplies and equipment lending",
+      "phone": "(732) 363-0470",
+      "category": "medical",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-baby-bassinet",
+      "name": "Baby Bassinet/Bathtub",
+      "description": "Infant bassinet and bathtub lending",
+      "phone": "(848) 525-9275",
+      "category": "baby-equipment",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-car-seat",
+      "name": "Car Seat Gemach",
+      "description": "Infant car seat safety lending",
+      "phone": "(732) 905-7095",
+      "category": "baby-equipment",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-formula",
+      "name": "Baby Formula",
+      "description": "Receive or donate baby formula",
+      "phone": "(732) 364-1248",
+      "category": "baby-nursing",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-pump",
+      "name": "Breast Pump Double",
+      "description": "Electric double breast pump lending",
+      "phone": "(732) 905-3834",
+      "category": "baby-nursing",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-gowns",
+      "name": "Gown Gemach",
+      "description": "Occasion wear for simchos",
+      "phone": "(732) 703-0887",
+      "category": "simcha-gowns",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-headpieces",
+      "name": "Headpieces",
+      "description": "Bridal accessories and headpieces",
+      "phone": "(732) 367-4171",
+      "category": "wedding-headpieces",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-kallah-shoes",
+      "name": "Kallah Shoes",
+      "description": "Bridal footwear lending service",
+      "phone": "(732) 730-1916",
+      "category": "wedding-shoes",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-hachnasas",
+      "name": "Hachnasas Kallah",
+      "description": "Financial aid for wedding expenses",
+      "phone": "(347) 415-1525",
+      "category": "money",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-chairs-tables",
+      "name": "Chairs & Tables",
+      "description": "Event furniture rental for simchos",
+      "phone": "(732) 664-1521",
+      "category": "simcha-tables",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-tablecloths",
+      "name": "Tablecloths",
+      "description": "Table linen lending for events",
+      "phone": "(732) 887-5914",
+      "category": "simcha-tablecloths",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-flowers",
+      "name": "Flowers",
+      "description": "Floral arrangements for simchos",
+      "phone": "(732) 905-2075",
+      "category": "simcha-flowers",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-makeup",
+      "name": "Makeup for Simchos",
+      "description": "Event makeup application service",
+      "phone": "(323) 348-7606",
+      "category": "wedding-makeup",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-rides",
+      "name": "Rides to Anywhere",
+      "description": "Volunteer transportation assistance",
+      "phone": "(718) 506-1500",
+      "category": "services",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-seforim",
+      "name": "Seforim Library",
+      "description": "English-language seforim lending library",
+      "phone": "(732) 363-8938",
+      "category": "seforim",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-sheitels",
+      "name": "Shaitels",
+      "description": "Sheitel lending and exchange service",
+      "phone": "(732) 367-2203",
+      "category": "sheitels",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-clothing",
+      "name": "Children's Clothing",
+      "description": "Children's apparel lending and exchange",
+      "phone": "(732) 363-7283",
+      "category": "clothing",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-tools",
+      "name": "Tools",
+      "description": "General tools available for borrowing",
+      "phone": "(732) 370-4858",
+      "category": "household",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-mechitzos",
+      "name": "Mechitzos",
+      "description": "Prayer dividers for events and simchos",
+      "phone": "(732) 364-8417",
+      "category": "simcha-shabbos",
+      "location": "lakewood"
+    },
+    {
+      "id": "lkwd-benchers",
+      "name": "Benchers",
+      "description": "Prayer booklets for Shabbos and events",
+      "phone": "(347) 715-0409",
+      "category": "simcha-shabbos",
+      "location": "lakewood"
+    },
+    {
+      "id": "monsey-baby-equip",
+      "name": "Baby Equipment Gemach",
+      "description": "Baby gear lending, keep up to 6 weeks",
+      "phone": "(845) 397-7724",
+      "category": "baby-equipment",
+      "location": "monsey"
+    },
+    {
+      "id": "monsey-breastpump",
+      "name": "Breastpump Gemach",
+      "description": "Electric breast pump lending service",
+      "phone": "(845) 216-9528",
+      "category": "baby-nursing",
+      "location": "monsey"
+    },
+    {
+      "id": "monsey-brides",
+      "name": "Brides on Bohr",
+      "description": "Bridal gown rental in Monsey",
+      "phone": "(845) 352-2418",
+      "category": "wedding-gowns",
+      "location": "monsey"
+    },
+    {
+      "id": "monsey-preemie",
+      "name": "Preemie Gemach",
+      "description": "Preemie clothes and resource books",
+      "phone": "(845) 426-3507",
+      "category": "baby-preemie",
+      "location": "monsey"
+    },
+    {
+      "id": "monsey-gown",
+      "name": "Gown Gemach Mother/Sister",
+      "description": "Occasion wear for mothers and sisters",
+      "phone": "(845) 356-9434",
+      "category": "simcha-gowns",
+      "location": "monsey"
+    },
+    {
+      "id": "monsey-loans",
+      "name": "Gemilas Chesed Inc",
+      "description": "Interest-free financial assistance loans",
+      "phone": "(845) 356-7964",
+      "category": "money",
+      "location": "monsey"
+    },
+    {
+      "id": "ft-baby-equip",
+      "name": "Baby Equipment",
+      "description": "Infant gear rental in Five Towns",
+      "phone": "(718) 327-0113",
+      "category": "baby-equipment",
+      "location": "five-towns"
+    },
+    {
+      "id": "ft-bridal",
+      "name": "N'Shei Chasdei Leah",
+      "description": "Bridal gowns for kallahs in Five Towns",
+      "phone": "(718) 327-0385",
+      "category": "wedding-gowns",
+      "location": "five-towns"
+    },
+    {
+      "id": "ft-flowers",
+      "name": "Simchas Naava Flowers",
+      "description": "Fresh flower exchange for simchos",
+      "phone": "(516) 239-6066",
+      "category": "simcha-flowers",
+      "location": "five-towns"
+    },
+    {
+      "id": "ft-gowns",
+      "name": "Best Friends Gown Gemach",
+      "description": "Occasion wear for simchos",
+      "phone": "(516) 680-0696",
+      "category": "simcha-gowns",
+      "location": "five-towns"
+    },
+    {
+      "id": "ft-loans",
+      "name": "United Jewish Community",
+      "description": "Financial assistance for Five Towns families",
+      "phone": "(516) 295-0296",
+      "category": "money",
+      "location": "five-towns"
+    }
+  ]
+}
