@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import GemachClient from "./GemachClient";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Community Gemach Directory | Hakhel",
@@ -20,15 +21,13 @@ export const metadata: Metadata = {
 export default function GemachPage() {
   return (
     <main>
-      <section className="py-16 px-6 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-3">
-          Community Gemach Directory
-        </h1>
-        <p className="text-text-muted max-w-2xl mx-auto">
-          Hundreds of chesed resources across the tri-state area. Search by
-          category, location, or keyword to find exactly what you need.
-        </p>
-      </section>
+      <PageHeader
+        title="Community Gemach Directory"
+        subtitle="Hundreds of chesed resources across the tri-state area. Search by category, location, or keyword to find exactly what you need."
+        icon="heart"
+        breadcrumb="Gemach"
+        tintClass="bg-section-gemach"
+      />
       <GemachClient />
     </main>
   );

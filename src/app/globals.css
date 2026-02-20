@@ -1,17 +1,41 @@
 @import "tailwindcss";
 
 @theme inline {
+  /* Primary Blue */
   --color-primary: #4A7BC7;
   --color-primary-light: #6B93D4;
-  --color-primary-dark: #3A62A3;
+  --color-primary-dark: #2C5AA0;
+
+  /* Gold Accent */
   --color-accent: #C6A052;
+  --color-accent-light: #D4B574;
+  --color-accent-dark: #A8853A;
+  --color-accent-bg: #FBF6EC;
+
+  /* Text */
   --color-text-main: #2D3436;
   --color-text-muted: #636E72;
-  --color-bg-pure: #FFFFFF;
-  --color-bg-soft: #F9FAFB;
-  --color-bg-accent: #EEF2F7;
 
+  /* Backgrounds - warm tones */
+  --color-bg-pure: #FFFFFF;
+  --color-bg-soft: #FAF8F5;
+  --color-bg-accent: #F0EDE6;
+  --color-bg-warm: #F5F0E8;
+
+  /* Page-specific tints */
+  --color-section-resources: #EFF4FB;
+  --color-section-gemach: #F0F7F0;
+  --color-section-shiurim: #F5F0FB;
+  --color-section-emails: #FBF6EC;
+  --color-section-programs: #FFF8F0;
+  --color-section-about: #F5F8FA;
+
+  /* Footer */
+  --color-footer-bg: #1B2838;
+
+  /* Fonts */
   --font-sans: "Inter", sans-serif;
+  --font-heading: "Merriweather", serif;
 }
 
 body {
@@ -24,4 +48,55 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Heading accent underline */
+.heading-accent::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  margin-top: 12px;
+}
+
+.heading-accent-center::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  margin: 12px auto 0;
+}
+
+/* Card with colored left border */
+.card-accent-left {
+  border-left: 3px solid var(--color-accent);
+}
+
+.card-accent-blue {
+  border-left: 3px solid var(--color-primary);
+}
+
+.card-accent-green {
+  border-left: 3px solid #5B9A6B;
+}
+
+.card-accent-purple {
+  border-left: 3px solid #8B6BAE;
+}
+
+.card-accent-gold {
+  border-left: 3px solid var(--color-accent);
+}
+
+/* Warm elevated shadow */
+.shadow-warm {
+  box-shadow: 0 2px 12px rgba(198, 160, 82, 0.08);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 4px 24px rgba(198, 160, 82, 0.12);
 }

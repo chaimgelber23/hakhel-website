@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DailyEmailsClient from "./DailyEmailsClient";
+import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Daily Email Archives | Hakhel",
@@ -18,23 +19,22 @@ export const metadata: Metadata = {
 export default function DailyEmailsPage() {
   return (
     <main>
-      <section className="py-16 px-6 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-3">
-          Daily Email Archives
-        </h1>
-        <p className="text-text-muted max-w-2xl mx-auto mb-6">
-          15+ years of curated Torah insights, delivered daily to thousands
-          worldwide. Browse the archives or subscribe to receive them each morning.
-        </p>
+      <PageHeader
+        title="Daily Email Archives"
+        subtitle="15+ years of curated Torah insights, delivered daily to thousands worldwide. Browse the archives or subscribe to receive them each morning."
+        icon="envelope"
+        breadcrumb="Daily Emails"
+        tintClass="bg-section-emails"
+      >
         <a
           href="https://lp.constantcontactpages.com/su/opBjZAX"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-primary text-white px-6 py-2.5 rounded-xl text-sm font-medium hover:opacity-90 transition-opacity"
+          className="inline-flex items-center gap-2 mt-6 bg-accent text-white px-6 py-2.5 rounded-xl text-sm font-medium hover:bg-accent-dark transition-colors"
         >
           Subscribe to Daily Emails
         </a>
-      </section>
+      </PageHeader>
       <DailyEmailsClient />
     </main>
   );

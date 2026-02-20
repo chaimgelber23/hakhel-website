@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PageHeader from "@/components/PageHeader";
+import Icon from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Programs | Hakhel",
@@ -17,6 +19,8 @@ const programs = [
       "Free and open to the public",
       "Past recordings available on the Hakhel tape list",
     ],
+    icon: "calendar",
+    accent: "card-accent-blue",
   },
   {
     title: "Community Awareness Bulletin",
@@ -29,6 +33,8 @@ const programs = [
       "Special editions for Pesach, Succos, and Eruv Tavshilin",
     ],
     link: { href: "/resources", label: "Browse Bulletin Archives" },
+    icon: "clipboard",
+    accent: "card-accent-gold",
   },
   {
     title: "Daily Email Bulletins",
@@ -41,6 +47,8 @@ const programs = [
       "Subscribe via Constant Contact",
     ],
     link: { href: "/daily-emails", label: "Browse Email Archives" },
+    icon: "envelope",
+    accent: "card-accent-gold",
   },
   {
     title: "Tefillin Awareness Project",
@@ -51,6 +59,8 @@ const programs = [
       "Educational materials and posters available",
       "Sunday community outreach programs",
     ],
+    icon: "star",
+    accent: "card-accent-purple",
   },
   {
     title: "V'Ani Tefilah Foundation",
@@ -63,6 +73,8 @@ const programs = [
       "Video and audio resources from various rabbanim",
     ],
     link: { href: "/resources", label: "Browse Tefillah Resources" },
+    icon: "mic",
+    accent: "card-accent-blue",
   },
   {
     title: "Shatnez Newsletter",
@@ -73,28 +85,38 @@ const programs = [
       "Practical guidance for consumers",
       "Newsletter archive available",
     ],
+    icon: "fileText",
+    accent: "card-accent-green",
   },
 ];
 
 export default function ProgramsPage() {
   return (
     <main>
+      <PageHeader
+        title="Our Programs"
+        subtitle="Bringing Torah learning and community together since 1755."
+        icon="calendar"
+        breadcrumb="Programs"
+        tintClass="bg-section-programs"
+      />
+
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3 text-center">
-            Our Programs
-          </h1>
-          <p className="text-text-muted text-center mb-12 max-w-2xl mx-auto">
-            Bringing Torah learning and community together since 1755.
-          </p>
-
-          <div className="space-y-10">
+          <div className="space-y-8">
             {programs.map((program) => (
               <div
                 key={program.title}
-                className="bg-bg-soft rounded-2xl p-6 md:p-8 border border-gray-100"
+                className={`bg-bg-pure rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm ${program.accent}`}
               >
-                <h2 className="text-xl font-bold mb-3">{program.title}</h2>
+                <div className="flex items-start gap-3 mb-4">
+                  <span className="p-2 rounded-lg bg-accent-bg text-accent shrink-0">
+                    <Icon name={program.icon} size={20} />
+                  </span>
+                  <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold">
+                    {program.title}
+                  </h2>
+                </div>
                 <p className="text-text-muted leading-relaxed mb-4">
                   {program.description}
                 </p>
@@ -106,9 +128,10 @@ export default function ProgramsPage() {
                 {program.link && (
                   <Link
                     href={program.link.href}
-                    className="text-sm font-medium text-primary hover:underline"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
                   >
-                    {program.link.label} →
+                    {program.link.label}
+                    <Icon name="chevronRight" size={14} />
                   </Link>
                 )}
               </div>
