@@ -7,16 +7,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Icon from "./Icon";
 
 const learnLinks = [
-  { href: "/resources", label: "Resources", desc: "60+ downloadable Torah materials", icon: "book" },
-  { href: "/daily-emails", label: "Daily Emails", desc: "15+ years of Torah insights", icon: "envelope" },
-  { href: "/shiurim", label: "Shiurim", desc: "300+ recorded lectures", icon: "mic" },
-];
-
-const communityLinks = [
-  { href: "/gemach", label: "Gemach", desc: "700+ chesed resource listings", icon: "heart" },
-  { href: "/programs", label: "Programs", desc: "Yarchei Kallah, bulletins & more", icon: "calendar" },
-  { href: "/about", label: "About", desc: "Our history since 1755", icon: "info" },
-  { href: "/contact", label: "Contact", desc: "Get in touch with Hakhel", icon: "phone" },
+  { href: "/resources", label: "Torah Library", desc: "60+ downloadable guides & schedules" },
+  { href: "/daily-emails", label: "Daily Emails", desc: "15+ years of Torah insights" },
+  { href: "/shiurim", label: "Shiurim", desc: "300+ recorded lectures" },
+  { href: "/programs", label: "Programs", desc: "Yarchei Kallah, bulletins & more" },
 ];
 
 function Dropdown({ label, links, isActive }: { label: string; links: typeof learnLinks; isActive: boolean }) {
@@ -50,22 +44,17 @@ function Dropdown({ label, links, isActive }: { label: string; links: typeof lea
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.15 }}
-            className="absolute top-full left-0 mt-2 w-64 bg-bg-pure rounded-xl border border-gray-100 shadow-warm-lg overflow-hidden z-50"
+            className="absolute top-full left-0 mt-2 w-56 bg-bg-pure rounded-xl border border-gray-100 shadow-warm-lg overflow-hidden z-50"
           >
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="flex items-start gap-3 px-4 py-3 hover:bg-bg-soft transition-colors"
+                className="block px-4 py-3 hover:bg-bg-soft transition-colors"
               >
-                <span className="text-accent mt-0.5">
-                  <Icon name={link.icon} size={16} />
-                </span>
-                <div>
-                  <p className="text-sm font-medium text-text-main">{link.label}</p>
-                  <p className="text-xs text-text-muted">{link.desc}</p>
-                </div>
+                <p className="text-sm font-medium text-text-main">{link.label}</p>
+                <p className="text-xs text-text-muted">{link.desc}</p>
               </Link>
             ))}
           </motion.div>
@@ -80,7 +69,6 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const learnActive = learnLinks.some((l) => pathname === l.href);
-  const communityActive = communityLinks.some((l) => pathname === l.href);
 
   return (
     <nav className="sticky top-0 z-50 bg-bg-pure/95 backdrop-blur-md border-b border-gray-100">
@@ -91,7 +79,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-7">
           <Link
             href="/"
             className={`text-sm font-medium transition-colors ${
@@ -100,8 +88,31 @@ export default function Navbar() {
           >
             Home
           </Link>
+          <Link
+            href="/about"
+            className={`text-sm font-medium transition-colors ${
+              pathname === "/about" ? "text-primary" : "text-text-main hover:text-primary"
+            }`}
+          >
+            About
+          </Link>
           <Dropdown label="Learn" links={learnLinks} isActive={learnActive} />
-          <Dropdown label="Community" links={communityLinks} isActive={communityActive} />
+          <Link
+            href="/gemach"
+            className={`text-sm font-medium transition-colors ${
+              pathname === "/gemach" ? "text-primary" : "text-text-main hover:text-primary"
+            }`}
+          >
+            Gemach
+          </Link>
+          <Link
+            href="/contact"
+            className={`text-sm font-medium transition-colors ${
+              pathname === "/contact" ? "text-primary" : "text-text-main hover:text-primary"
+            }`}
+          >
+            Contact
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
@@ -149,43 +160,24 @@ export default function Navbar() {
             className="md:hidden bg-bg-pure border-b border-gray-100 overflow-hidden"
           >
             <div className="px-6 py-4">
-              <Link
-                href="/"
-                onClick={() => setMobileOpen(false)}
-                className={`flex items-center gap-3 py-2.5 text-sm font-medium ${
-                  pathname === "/" ? "text-primary" : "text-text-main"
-                }`}
-              >
-                <span className="text-accent"><Icon name="home" size={16} /></span>
-                Home
-              </Link>
-
-              <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mt-4 mb-2">Learn</p>
-              {learnLinks.map((link) => (
+              {[
+                { href: "/", label: "Home" },
+                { href: "/about", label: "About" },
+                { href: "/resources", label: "Torah Library" },
+                { href: "/daily-emails", label: "Daily Emails" },
+                { href: "/shiurim", label: "Shiurim" },
+                { href: "/gemach", label: "Gemach" },
+                { href: "/programs", label: "Programs" },
+                { href: "/contact", label: "Contact" },
+              ].map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`flex items-center gap-3 py-2.5 text-sm font-medium ${
+                  className={`block py-2.5 text-sm font-medium ${
                     pathname === link.href ? "text-primary" : "text-text-main"
                   }`}
                 >
-                  <span className="text-accent"><Icon name={link.icon} size={16} /></span>
-                  {link.label}
-                </Link>
-              ))}
-
-              <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mt-4 mb-2">Community</p>
-              {communityLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={`flex items-center gap-3 py-2.5 text-sm font-medium ${
-                    pathname === link.href ? "text-primary" : "text-text-main"
-                  }`}
-                >
-                  <span className="text-accent"><Icon name={link.icon} size={16} /></span>
                   {link.label}
                 </Link>
               ))}

@@ -11,7 +11,7 @@ const stats = [
 
 const explore = [
   {
-    title: "Torah Resources",
+    title: "Torah Library",
     desc: "Learning schedules, tefillah aids, brachos charts, halacha guides — all free PDFs ready to download and print.",
     href: "/resources",
     count: "60+ resources",
@@ -52,9 +52,9 @@ const explore = [
   },
   {
     title: "About Hakhel",
-    desc: "A volunteer organization since 1755, gathering the community together for Torah study and chesed.",
+    desc: "A volunteer organization since 1995, gathering the community together for Torah study and chesed.",
     href: "/about",
-    count: "Est. 1755",
+    count: "Est. 1995",
     icon: "info",
     accent: "card-accent-blue",
   },
@@ -113,7 +113,7 @@ export default function Home() {
           <p className="text-lg text-text-muted mb-10 leading-relaxed max-w-2xl mx-auto">
             A comprehensive hub of Torah resources, daily inspiration, community
             services, and recorded shiurim — serving the global Jewish community
-            since 1755.
+            since 1995.
           </p>
 
           {/* Quick Nav Icons */}

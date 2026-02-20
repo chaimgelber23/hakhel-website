@@ -95,7 +95,7 @@ export default function ProgramsPage() {
     <main>
       <PageHeader
         title="Our Programs"
-        subtitle="Bringing Torah learning and community together since 1755."
+        subtitle="Bringing Torah learning and community together since 1995."
         icon="calendar"
         breadcrumb="Programs"
         tintClass="bg-section-programs"

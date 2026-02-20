@@ -3,7 +3,7 @@ import ResourcesClient from "./ResourcesClient";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Torah Resources | Hakhel",
+  title: "Torah Library | Hakhel",
   description:
     "Free downloadable Torah learning schedules, tefillah aids, halachic guidelines, reference charts, and educational materials from Hakhel.",
   keywords: [
@@ -22,10 +22,10 @@ export default function ResourcesPage() {
   return (
     <main>
       <PageHeader
-        title="Torah Resources"
+        title="Torah Library"
         subtitle="Comprehensive collection of learning schedules, tefillah aids, halachic guidelines, and educational materials — all free to download and share."
         icon="book"
-        breadcrumb="Resources"
+        breadcrumb="Torah Library"
         tintClass="bg-section-resources"
       />
       <ResourcesClient />

@@ -31,7 +31,7 @@ const speakerColors = [
   "bg-accent-bg text-accent-dark",
   "bg-green-50 text-green-700",
   "bg-purple-50 text-purple-700",
-  "bg-blue-50 text-blue-700",
+  "bg-amber-50 text-amber-700",
   "bg-orange-50 text-orange-700",
 ];
 
@@ -40,7 +40,7 @@ const topicColors = [
   "bg-accent-bg text-accent-dark border-accent/20",
   "bg-green-50 text-green-700 border-green-200",
   "bg-purple-50 text-purple-700 border-purple-200",
-  "bg-blue-50 text-blue-700 border-blue-200",
+  "bg-amber-50 text-amber-700 border-amber-200",
   "bg-red-50 text-red-600 border-red-200",
 ];
 

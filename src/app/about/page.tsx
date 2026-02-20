@@ -6,7 +6,7 @@ import Icon from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "About | Hakhel",
-  description: "Learn about Hakhel - a non-profit volunteer organization dedicated to Torah education since 1755.",
+  description: "Learn about Hakhel - a non-profit volunteer organization dedicated to Torah education since 1995.",
 };
 
 const whatWeDo = [
@@ -23,7 +23,7 @@ export default function AboutPage() {
     <main>
       <PageHeader
         title="About Hakhel"
-        subtitle="A volunteer Torah organization gathering the community together since 1755."
+        subtitle="A volunteer Torah organization gathering the community together since 1995."
         icon="info"
         breadcrumb="About"
         tintClass="bg-section-about"
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <div className="space-y-4 text-text-muted leading-relaxed">
                 <p>
                   <strong className="text-text-main">Hakhel</strong> is a not-for-profit
-                  volunteer organization established in 5515/1755 in Flatbush, Brooklyn.
+                  volunteer organization established in 5755/1995 in Flatbush, Brooklyn.
                   Our mission is to promote Torah study, charitable acts, and proper
                   mitzvah performance throughout the Jewish community.
                 </p>

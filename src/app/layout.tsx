@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Hakhel",
   },
   description:
-    "Torah resources, daily email archives, 300+ shiurim, gemach directory, and community programs — all free from Hakhel, serving the Jewish community since 1755.",
+    "Torah resources, daily email archives, 300+ shiurim, gemach directory, and community programs — all free from Hakhel, serving the Jewish community since 1995.",
   keywords: [
     "Hakhel",
     "Torah",
