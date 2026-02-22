@@ -30,6 +30,10 @@
   --color-section-programs: #FFF8F0;
   --color-section-about: #F7F4EF;
 
+  /* Textures */
+  --bg-pattern: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C6A052' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+
+
   /* Footer */
   --color-footer-bg: #1B2838;
 
@@ -39,7 +43,8 @@
 }
 
 body {
-  background: var(--color-bg-pure);
+  background-color: var(--color-bg-pure);
+  background-image: var(--bg-pattern);
   color: var(--color-text-main);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -94,9 +99,67 @@ html {
 
 /* Warm elevated shadow */
 .shadow-warm {
-  box-shadow: 0 2px 12px rgba(198, 160, 82, 0.08);
+  box-shadow: 0 4px 14px rgba(198, 160, 82, 0.15), 0 1px 3px rgba(198, 160, 82, 0.08);
 }
 
 .shadow-warm-lg {
-  box-shadow: 0 4px 24px rgba(198, 160, 82, 0.12);
+  box-shadow: 0 10px 30px rgba(198, 160, 82, 0.2), 0 4px 10px rgba(198, 160, 82, 0.08);
+  transform: translateY(-2px);
+}
+
+.shadow-warm-hover:hover {
+  box-shadow: 0 12px 35px rgba(198, 160, 82, 0.25), 0 5px 15px rgba(198, 160, 82, 0.1);
+  transform: translateY(-4px);
+}
+
+/* Premium Gradients */
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #C6A052 0%, #B38F48 100%);
+}
+
+.bg-gradient-gold:hover {
+  background: linear-gradient(135deg, #D4B574 0%, #C6A052 100%);
+}
+
+/* Hide scrollbar for horizontal lists */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari and Opera */
+}
+
+/* Heading polish */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+  letter-spacing: -0.02em;
+}
+
+/* Quote styling */
+.quote-premium {
+  position: relative;
+  font-style: italic;
+}
+
+.quote-premium::before {
+  content: '""';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 60px;
+  color: var(--color-accent);
+  opacity: 0.2;
+  font-family: var(--font-heading);
+  line-height: 1;
 }
