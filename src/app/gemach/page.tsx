@@ -24,7 +24,6 @@ export default function GemachPage() {
       <PageHeader
         title="Community Gemach Directory"
         subtitle="Hundreds of chesed resources across the tri-state area. Search by category, location, or keyword to find exactly what you need."
-        icon="heart"
         breadcrumb="Gemach"
         tintClass="bg-section-gemach"
       />

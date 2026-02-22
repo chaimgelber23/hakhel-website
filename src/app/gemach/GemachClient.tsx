@@ -3,7 +3,6 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import data from "@/data/gemach.json";
-import Icon from "@/components/Icon";
 
 const entries = data.entries;
 const categories = data.categories;
@@ -13,6 +12,7 @@ export default function GemachClient() {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedLocation, setSelectedLocation] = useState("all");
+  const [showFilters, setShowFilters] = useState(false);
 
   const hasFilters = search !== "" || selectedCategory !== "all" || selectedLocation !== "all";
 
@@ -24,10 +24,16 @@ export default function GemachClient() {
 
   const filtered = useMemo(() => {
     return entries.filter((entry) => {
+      const categoryLabel = categories.find(c => c.id === entry.category)?.label || "";
+      const locationLabel = locations.find(l => l.id === entry.location)?.label || "";
+
       const matchesSearch =
         !search ||
         entry.name.toLowerCase().includes(search.toLowerCase()) ||
-        entry.description.toLowerCase().includes(search.toLowerCase());
+        entry.description.toLowerCase().includes(search.toLowerCase()) ||
+        categoryLabel.toLowerCase().includes(search.toLowerCase()) ||
+        locationLabel.toLowerCase().includes(search.toLowerCase());
+
       const matchesCategory =
         selectedCategory === "all" || entry.category === selectedCategory;
       const matchesLocation =
@@ -41,19 +47,25 @@ export default function GemachClient() {
       {/* Search & Filters */}
       <section className="px-6 pb-4 pt-8">
         <div className="max-w-6xl mx-auto">
-          <div className="relative max-w-md mx-auto mb-6 flex gap-2">
+          <div className="relative max-w-xl mx-auto mb-6 flex gap-2">
             <div className="relative flex-1">
-              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted">
-                <Icon name="search" size={16} />
-              </span>
               <input
                 type="text"
-                placeholder="Search gemachs..."
+                placeholder="Search gemachs, categories, locations..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 bg-bg-soft text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
+                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-bg-soft text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
               />
             </div>
+            <button
+              onClick={() => setShowFilters(!showFilters)}
+              className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-colors whitespace-nowrap border ${showFilters || selectedCategory !== "all" || selectedLocation !== "all"
+                  ? "bg-primary text-white border-primary"
+                  : "bg-bg-soft text-text-muted hover:bg-bg-accent border-gray-200"
+                }`}
+            >
+              Filters {(selectedCategory !== "all" || selectedLocation !== "all") && "• Active"}
+            </button>
             {hasFilters && (
               <button
                 onClick={clearFilters}
@@ -64,67 +76,77 @@ export default function GemachClient() {
             )}
           </div>
 
-          {/* Location filter */}
-          <div className="mb-4">
-            <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2 flex items-center gap-1.5">
-              <Icon name="mapPin" size={12} />
-              Location
-            </p>
-            <div className="flex overflow-x-auto whitespace-nowrap scrollbar-hide gap-2 pb-2 -mx-6 px-6 md:mx-0 md:px-0">
-              <button
-                onClick={() => setSelectedLocation("all")}
-                className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedLocation === "all"
-                  ? "bg-primary text-white"
-                  : "bg-bg-soft text-text-muted hover:bg-bg-accent"
-                  }`}
+          <AnimatePresence>
+            {showFilters && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                className="overflow-hidden"
               >
-                All Locations
-              </button>
-              {locations.map((loc) => (
-                <button
-                  key={loc.id}
-                  onClick={() => setSelectedLocation(loc.id)}
-                  className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedLocation === loc.id
-                    ? "bg-primary text-white"
-                    : "bg-bg-soft text-text-muted hover:bg-bg-accent"
-                    }`}
-                >
-                  {loc.label}
-                </button>
-              ))}
-            </div>
-          </div>
 
-          {/* Category filter */}
-          <div className="mb-4">
-            <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2 flex items-center gap-1.5">
-              <Icon name="heart" size={12} />
-              Category
-            </p>
-            <div className="flex overflow-x-auto whitespace-nowrap scrollbar-hide gap-2 pb-2 -mx-6 px-6 md:mx-0 md:px-0">
-              <button
-                onClick={() => setSelectedCategory("all")}
-                className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedCategory === "all"
-                  ? "bg-accent text-white"
-                  : "bg-bg-soft text-text-muted hover:bg-bg-accent"
-                  }`}
-              >
-                All Categories
-              </button>
-              {categories.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setSelectedCategory(cat.id)}
-                  className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedCategory === cat.id
-                    ? "bg-accent text-white"
-                    : "bg-bg-soft text-text-muted hover:bg-bg-accent"
-                    }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-          </div>
+                {/* Location filter */}
+                <div className="mb-4">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2">
+                    Location
+                  </p>
+                  <div className="flex overflow-x-auto md:flex-wrap whitespace-nowrap scrollbar-hide gap-2 pb-2 -mx-6 px-6 md:mx-0 md:px-0">
+                    <button
+                      onClick={() => setSelectedLocation("all")}
+                      className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedLocation === "all"
+                        ? "bg-primary text-white"
+                        : "bg-bg-soft text-text-muted hover:bg-bg-accent"
+                        }`}
+                    >
+                      All Locations
+                    </button>
+                    {locations.map((loc) => (
+                      <button
+                        key={loc.id}
+                        onClick={() => setSelectedLocation(loc.id)}
+                        className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedLocation === loc.id
+                          ? "bg-primary text-white"
+                          : "bg-bg-soft text-text-muted hover:bg-bg-accent"
+                          }`}
+                      >
+                        {loc.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Category filter */}
+                <div className="mb-4">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2">
+                    Category
+                  </p>
+                  <div className="flex overflow-x-auto md:flex-wrap whitespace-nowrap scrollbar-hide gap-2 pb-2 -mx-6 px-6 md:mx-0 md:px-0">
+                    <button
+                      onClick={() => setSelectedCategory("all")}
+                      className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedCategory === "all"
+                        ? "bg-accent text-white"
+                        : "bg-bg-soft text-text-muted hover:bg-bg-accent"
+                        }`}
+                    >
+                      All Categories
+                    </button>
+                    {categories.map((cat) => (
+                      <button
+                        key={cat.id}
+                        onClick={() => setSelectedCategory(cat.id)}
+                        className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${selectedCategory === cat.id
+                          ? "bg-accent text-white"
+                          : "bg-bg-soft text-text-muted hover:bg-bg-accent"
+                          }`}
+                      >
+                        {cat.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </section>
 
@@ -155,8 +177,7 @@ export default function GemachClient() {
                     <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-accent-bg text-accent-dark border border-accent/20">
                       {categories.find((c) => c.id === entry.category)?.label ?? entry.category}
                     </span>
-                    <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-bg-soft text-text-muted border border-gray-100 inline-flex items-center gap-1">
-                      <Icon name="mapPin" size={8} />
+                    <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-bg-soft text-text-muted border border-gray-100">
                       {locations.find((l) => l.id === entry.location)?.label ?? entry.location}
                     </span>
                   </div>
@@ -166,7 +187,6 @@ export default function GemachClient() {
                         href={`tel:${entry.phone.replace(/[^+\d]/g, "")}`}
                         className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                       >
-                        <Icon name="phone" size={12} />
                         {entry.phone}
                       </a>
                     )}

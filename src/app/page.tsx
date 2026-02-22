@@ -128,12 +128,9 @@ export default function Home() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="flex flex-col items-center gap-2 p-3 rounded-xl bg-bg-pure/70 backdrop-blur-sm border border-accent/20 hover:border-accent/40 hover:shadow-warm transition-all group"
+                className="flex flex-col items-center justify-center p-4 rounded-xl bg-bg-pure/70 backdrop-blur-sm border border-accent/20 hover:border-accent/40 hover:shadow-warm transition-all group"
               >
-                <span className="text-accent group-hover:text-accent-dark transition-colors">
-                  <Icon name={item.icon} size={22} />
-                </span>
-                <span className="text-xs font-semibold text-text-main">
+                <span className="text-sm font-semibold text-text-main">
                   {item.label}
                 </span>
               </Link>
@@ -162,9 +159,6 @@ export default function Home() {
         <FadeIn delay={0.2} className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center">
-              <span className="text-accent mb-2">
-                <Icon name={stat.icon} size={24} />
-              </span>
               <p className="text-3xl md:text-4xl font-bold text-white">
                 {stat.value}
               </p>
@@ -194,9 +188,6 @@ export default function Home() {
                 className={`bg-bg-pure rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-warm-lg transition-all group ${item.accent}`}
               >
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="p-2 rounded-lg bg-accent-bg text-accent shrink-0">
-                    <Icon name={item.icon} size={20} />
-                  </span>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">
                       <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
@@ -208,7 +199,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <p className="text-sm text-text-muted leading-relaxed pl-[44px]">
+                <p className="text-sm text-text-muted leading-relaxed">
                   {item.desc}
                 </p>
               </Link>
@@ -278,11 +269,8 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="bg-bg-pure rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-warm-lg transition-all card-accent-left"
+                className="bg-bg-pure rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-warm-lg transition-all card-accent-left flex flex-col justify-center"
               >
-                <span className="inline-block p-2 rounded-lg bg-accent-bg text-accent mb-3">
-                  <Icon name={item.icon} size={20} />
-                </span>
                 <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
                 <p className="text-sm text-text-muted leading-relaxed">
                   {item.desc}
@@ -309,9 +297,6 @@ export default function Home() {
       {/* Newsletter CTA */}
       <section className="py-16 px-6">
         <FadeIn delay={0.2} className="max-w-2xl mx-auto text-center">
-          <span className="text-accent mb-3 inline-block">
-            <Icon name="envelope" size={32} />
-          </span>
           <h2 className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl font-bold mb-3">
             Join 15,000+ Readers
           </h2>
