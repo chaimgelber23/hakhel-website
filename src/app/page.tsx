@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Icon from "@/components/Icon";
 import FadeIn from "@/components/FadeIn";
+import AnimatedCounter from "@/components/AnimatedCounter";
 
 const stats = [
   { label: "Daily Email Subscribers", value: "15,000+", icon: "envelope" },
@@ -92,7 +93,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-bg-warm py-20 md:py-28 px-6">
+      <section className="relative overflow-hidden bg-bg-warm min-h-screen flex items-center px-6">
         <div className="absolute inset-0">
           <Image
             src="/images/hero-torah.jpg"
@@ -104,7 +105,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-bg-warm/80 via-bg-warm/90 to-bg-warm" />
         </div>
 
-        <FadeIn className="max-w-4xl mx-auto relative text-center">
+        <FadeIn className="max-w-4xl mx-auto relative text-center w-full py-20">
           <p className="font-[family-name:var(--font-heading)] text-accent-dark text-lg font-bold mb-3 tracking-wide">
             HAKHEL
           </p>
@@ -160,7 +161,7 @@ export default function Home() {
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center">
               <p className="text-3xl md:text-4xl font-bold text-white">
-                {stat.value}
+                <AnimatedCounter value={stat.value} />
               </p>
               <p className="text-sm text-white/60 mt-1">{stat.label}</p>
             </div>

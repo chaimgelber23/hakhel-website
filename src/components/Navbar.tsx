@@ -111,14 +111,14 @@ export default function Navbar() {
           >
             About
           </Link>
-          <Dropdown label="Learn" links={learnLinks} isActive={learnActive} />
+          <Dropdown label="Torah Library" links={learnLinks} isActive={learnActive} />
           <Dropdown label="Guides & Tools" links={resourceLinks} isActive={resourceActive} wide />
           <Link
             href="/gemach"
             className={`text-sm font-medium transition-colors ${pathname === "/gemach" ? "text-primary" : "text-text-main hover:text-primary"
               }`}
           >
-            Gemach
+            Gemach List
           </Link>
           <Link
             href="/contact"
@@ -177,7 +177,7 @@ export default function Navbar() {
                 { href: "/daily-emails", label: "Daily Emails" },
                 { href: "/shiurim", label: "Shiurim" },
                 { href: "/programs", label: "Programs" },
-                { href: "/gemach", label: "Gemach" },
+                { href: "/gemach", label: "Gemach List" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
                 <Link
