@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Icon from "@/components/Icon";
+import FadeIn from "@/components/FadeIn";
 
 const stats = [
   { label: "Daily Email Subscribers", value: "15,000+", icon: "envelope" },
@@ -103,7 +104,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-bg-warm/80 via-bg-warm/90 to-bg-warm" />
         </div>
 
-        <div className="max-w-4xl mx-auto relative text-center">
+        <FadeIn className="max-w-4xl mx-auto relative text-center">
           <p className="font-[family-name:var(--font-heading)] text-accent-dark text-lg font-bold mb-3 tracking-wide">
             HAKHEL
           </p>
@@ -153,12 +154,12 @@ export default function Home() {
               Explore Resources
             </Link>
           </div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* By the Numbers */}
       <section className="py-14 px-6 bg-primary-dark">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <FadeIn delay={0.2} className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center">
               <span className="text-accent mb-2">
@@ -170,12 +171,12 @@ export default function Home() {
               <p className="text-sm text-white/60 mt-1">{stat.label}</p>
             </div>
           ))}
-        </div>
+        </FadeIn>
       </section>
 
       {/* What You'll Find */}
       <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
+        <FadeIn className="max-w-6xl mx-auto">
           <h2 className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl font-bold text-center mb-1">
             What You&apos;ll Find Here
           </h2>
@@ -213,12 +214,12 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Featured Image + Daily Email Section */}
       <section className="py-16 px-6 bg-accent-bg">
-        <div className="max-w-6xl mx-auto">
+        <FadeIn className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <Image
@@ -258,12 +259,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Core Initiatives */}
       <section className="py-16 px-6 bg-bg-soft">
-        <div className="max-w-6xl mx-auto">
+        <FadeIn className="max-w-6xl mx-auto">
           <h2 className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl font-bold text-center mb-1">
             Core Initiatives
           </h2>
@@ -289,25 +290,25 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Quote Block */}
       <section className="py-16 px-6 bg-primary-dark">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="font-[family-name:var(--font-heading)] text-2xl md:text-3xl text-white leading-relaxed italic mb-6">
+        <FadeIn delay={0.2} className="max-w-3xl mx-auto text-center">
+          <p className="quote-premium font-[family-name:var(--font-heading)] text-2xl md:text-3xl text-white leading-relaxed italic mb-6">
             &ldquo;Hakhel es ha&apos;am — Gather the people: the men, the women,
             and the children&rdquo;
           </p>
           <p className="text-accent text-sm font-medium">
             Devarim 31:12
           </p>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Newsletter CTA */}
       <section className="py-16 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <FadeIn delay={0.2} className="max-w-2xl mx-auto text-center">
           <span className="text-accent mb-3 inline-block">
             <Icon name="envelope" size={32} />
           </span>
@@ -325,7 +326,7 @@ export default function Home() {
           >
             Get Daily Emails
           </a>
-        </div>
+        </FadeIn>
       </section>
     </main>
   );

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import ResourcesClient from "./ResourcesClient";
 import PageHeader from "@/components/PageHeader";
@@ -28,7 +29,9 @@ export default function ResourcesPage() {
         breadcrumb="Torah Library"
         tintClass="bg-section-resources"
       />
-      <ResourcesClient />
+      <Suspense>
+        <ResourcesClient />
+      </Suspense>
     </main>
   );
 }

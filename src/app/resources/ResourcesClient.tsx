@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import data from "@/data/resources.json";
 import Icon from "@/components/Icon";
 
@@ -32,8 +33,17 @@ const fileTypeColors: Record<string, string> = {
 };
 
 export default function ResourcesClient() {
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category");
+  const [activeCategory, setActiveCategory] = useState<string | null>(categoryParam);
   const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    const param = searchParams.get("category");
+    if (param && categories.some((c) => c.id === param)) {
+      setActiveCategory(param);
+    }
+  }, [searchParams]);
 
   const filtered = useMemo(() => {
     if (!activeCategory && !search) return [];
