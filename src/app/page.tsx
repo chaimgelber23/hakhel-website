@@ -5,10 +5,10 @@ import FadeIn from "@/components/FadeIn";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
 const stats = [
-  { label: "Daily Email Subscribers", value: "15,000+", icon: "envelope" },
-  { label: "Downloadable Resources", value: "60+", icon: "download" },
-  { label: "Recorded Shiurim", value: "300+", icon: "mic" },
-  { label: "Gemach Listings", value: "700+", icon: "heart" },
+  { label: "Daily Email Subscribers", value: "15,000+", icon: "envelope", href: "/daily-emails" },
+  { label: "Downloadable Resources", value: "60+", icon: "download", href: "/resources" },
+  { label: "Recorded Shiurim", value: "300+", icon: "mic", href: "/shiurim" },
+  { label: "Gemach Listings", value: "700+", icon: "heart", href: "/gemach" },
 ];
 
 const explore = [
@@ -118,26 +118,6 @@ export default function Home() {
             since 1995.
           </p>
 
-          {/* Quick Nav Icons */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto mb-10">
-            {[
-              { icon: "envelope", label: "Daily Torah", href: "/daily-emails" },
-              { icon: "book", label: "60+ Resources", href: "/resources" },
-              { icon: "mic", label: "300+ Shiurim", href: "/shiurim" },
-              { icon: "heart", label: "700+ Gemachs", href: "/gemach" },
-            ].map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="flex flex-col items-center justify-center p-4 rounded-xl bg-bg-pure/70 backdrop-blur-sm border border-accent/20 hover:border-accent/40 hover:shadow-warm transition-all group"
-              >
-                <span className="text-sm font-semibold text-text-main">
-                  {item.label}
-                </span>
-              </Link>
-            ))}
-          </div>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/daily-emails"
@@ -159,12 +139,12 @@ export default function Home() {
       <section className="py-14 px-6 bg-primary-dark">
         <FadeIn delay={0.2} className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat) => (
-            <div key={stat.label} className="flex flex-col items-center">
-              <p className="text-3xl md:text-4xl font-bold text-white">
+            <Link key={stat.label} href={stat.href} className="flex flex-col items-center group">
+              <p className="text-3xl md:text-4xl font-bold text-white group-hover:text-accent transition-colors">
                 <AnimatedCounter value={stat.value} />
               </p>
-              <p className="text-sm text-white/60 mt-1">{stat.label}</p>
-            </div>
+              <p className="text-sm text-white/60 group-hover:text-white/80 mt-1 transition-colors">{stat.label}</p>
+            </Link>
           ))}
         </FadeIn>
       </section>
