@@ -83,9 +83,6 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="bg-accent-bg rounded-2xl p-6 md:p-8 border border-accent/10">
-                <span className="inline-block p-2 rounded-lg bg-accent/10 text-accent mb-3">
-                  <Icon name="gift" size={22} />
-                </span>
                 <h2 className="font-[family-name:var(--font-heading)] font-bold text-lg mb-3">Support Hakhel</h2>
                 <p className="text-sm text-text-muted leading-relaxed mb-4">
                   Hakhel is a non-profit volunteer organization. Your generous
@@ -102,9 +99,6 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-bg-pure rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm">
-                <span className="inline-block p-2 rounded-lg bg-accent-bg text-accent mb-3">
-                  <Icon name="heart" size={22} />
-                </span>
                 <h3 className="font-semibold mb-2">Submit a Gemach Listing</h3>
                 <p className="text-sm text-text-muted leading-relaxed">
                   Know a gemach that should be in our directory? Email us the
