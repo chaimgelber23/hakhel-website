@@ -128,7 +128,7 @@ export default function ProgramsPage() {
                 {program.link && (
                   <Link
                     href={program.link.href}
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors shadow-sm"
                   >
                     {program.link.label}
                     <Icon name="chevronRight" size={14} />
