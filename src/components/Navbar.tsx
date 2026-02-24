@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import Icon from "./Icon";
 
 const learnLinks = [
   { href: "/daily-emails", label: "Daily Emails", desc: "15+ years of Torah insights" },
@@ -41,7 +40,7 @@ function Dropdown({ label, links, isActive, wide }: { label: string; links: type
           }`}
       >
         {label}
-        <Icon name="chevronDown" size={14} className={`transition-transform ${open ? "rotate-180" : ""}`} />
+        <span className={`text-[10px] ml-0.5 transition-transform inline-block ${open ? "rotate-180" : ""}`}>&#9662;</span>
       </button>
 
       <AnimatePresence>
