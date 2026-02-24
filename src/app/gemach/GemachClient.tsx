@@ -3,7 +3,6 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import data from "@/data/gemach.json";
-import Icon from "@/components/Icon";
 
 const entries = data.entries;
 const categories = data.categories;
@@ -132,15 +131,12 @@ export default function GemachClient() {
           {/* Search bar row */}
           <div className="relative max-w-xl mx-auto mb-4 flex gap-2">
             <div className="relative flex-1">
-              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted">
-                <Icon name="search" size={16} />
-              </span>
               <input
                 type="text"
                 placeholder="Search by name, type, or location..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 bg-bg-soft text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
+                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-bg-soft text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all"
               />
             </div>
             {/* Mobile-only filter toggle */}
@@ -182,17 +178,9 @@ export default function GemachClient() {
                     onClick={() => applySuggestion(s)}
                     className="px-3 py-1.5 rounded-lg text-xs font-medium bg-primary/10 text-primary hover:bg-primary/20 transition-colors border border-primary/20"
                   >
-                    {s.type === "location" ? (
-                      <span className="inline-flex items-center gap-1">
-                        <Icon name="mapPin" size={10} />
-                        All in {s.label}
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center gap-1">
-                        <Icon name="heart" size={10} />
-                        All {s.label}
-                      </span>
-                    )}
+                    {s.type === "location"
+                      ? `All in ${s.label}`
+                      : `All ${s.label}`}
                   </button>
                 ))}
               </motion.div>
@@ -204,7 +192,6 @@ export default function GemachClient() {
             <div className="md:hidden max-w-xl mx-auto mb-3 flex flex-wrap gap-2">
               {activeLocationLabel && (
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20">
-                  <Icon name="mapPin" size={10} />
                   {activeLocationLabel}
                   <button
                     onClick={() => setSelectedLocation("all")}
@@ -217,7 +204,6 @@ export default function GemachClient() {
               )}
               {activeCategoryLabel && (
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent-dark border border-accent/20">
-                  <Icon name="heart" size={10} />
                   {activeCategoryLabel}
                   <button
                     onClick={() => setSelectedCategory("all")}
@@ -245,8 +231,7 @@ export default function GemachClient() {
             <div className="max-w-6xl mx-auto pb-4">
               {/* Location filter */}
               <div className="mb-4">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2 flex items-center gap-1.5">
-                  <Icon name="mapPin" size={12} />
+                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2">
                   Location
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -278,8 +263,7 @@ export default function GemachClient() {
 
               {/* Category filter */}
               <div className="mb-2">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2 flex items-center gap-1.5">
-                  <Icon name="heart" size={12} />
+                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2">
                   Category
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -318,8 +302,7 @@ export default function GemachClient() {
         <div className="max-w-6xl mx-auto">
           {/* Locations */}
           <div className="mb-6">
-            <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-3 flex items-center gap-1.5">
-              <Icon name="mapPin" size={12} />
+            <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-3">
               Browse by Location
             </p>
             <div className="grid grid-cols-4 lg:grid-cols-6 gap-2">
@@ -354,8 +337,7 @@ export default function GemachClient() {
 
           {/* Categories - grouped */}
           <div className="mb-4">
-            <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-3 flex items-center gap-1.5">
-              <Icon name="heart" size={12} />
+            <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-3">
               Browse by Category
             </p>
             <div className="space-y-3">
@@ -444,9 +426,8 @@ export default function GemachClient() {
                     </button>
                     <button
                       onClick={() => setSelectedLocation(entry.location)}
-                      className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-bg-soft text-text-muted border border-gray-100 hover:bg-gray-200 transition-colors cursor-pointer inline-flex items-center gap-1"
+                      className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-bg-soft text-text-muted border border-gray-100 hover:bg-gray-200 transition-colors cursor-pointer"
                     >
-                      <Icon name="mapPin" size={8} />
                       {locations.find((l) => l.id === entry.location)?.label ??
                         entry.location}
                     </button>
@@ -455,9 +436,8 @@ export default function GemachClient() {
                     {entry.phone && (
                       <a
                         href={`tel:${entry.phone.replace(/[^+\d]/g, "")}`}
-                        className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                        className="text-sm font-medium text-primary hover:underline"
                       >
-                        <Icon name="phone" size={12} />
                         {entry.phone}
                       </a>
                     )}

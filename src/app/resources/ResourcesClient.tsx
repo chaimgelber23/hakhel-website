@@ -3,7 +3,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import data from "@/data/resources.json";
-import Icon from "@/components/Icon";
 
 const categories = data.categories;
 const allCount = categories.reduce((s, c) => s + c.resources.length, 0);
@@ -104,10 +103,7 @@ export default function ResourcesClient() {
       {/* Search + Filters (shown when browsing) */}
       <section className="px-6 pb-4 pt-6">
         <div className="max-w-6xl mx-auto">
-          <div className="relative max-w-md mx-auto mb-6">
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted">
-              <Icon name="search" size={16} />
-            </span>
+          <div className="max-w-md mx-auto mb-6">
             <input
               type="text"
               placeholder="Search all resources..."
@@ -116,7 +112,7 @@ export default function ResourcesClient() {
                 setSearch(e.target.value);
                 if (e.target.value && !activeCategory) setActiveCategory(null);
               }}
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 bg-bg-soft text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+              className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-bg-soft text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
             />
           </div>
 
