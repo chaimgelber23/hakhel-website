@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import Icon from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "About | Hakhel",
@@ -10,12 +9,12 @@ export const metadata: Metadata = {
 };
 
 const whatWeDo = [
-  { title: "Daily Email Bulletins", desc: "Torah insights delivered every morning since 2005", icon: "envelope", href: "/daily-emails" },
-  { title: "Yarchei Kallah", desc: "Free public shiurim on federal holidays", icon: "calendar", href: "/programs" },
-  { title: "Gemach Directory", desc: "700+ community chesed resources listed", icon: "heart", href: "/gemach" },
-  { title: "Torah Resources", desc: "Hundreds of free guides, schedules, and aids", icon: "book", href: "/resources" },
-  { title: "Tefillin Project", desc: "Sunday outreach ensuring tefillin sanctity", icon: "star", href: "/programs" },
-  { title: "V'Ani Tefilah", desc: "Resources to enhance focus in tefillah", icon: "mic", href: "/resources" },
+  { title: "Daily Email Bulletins", desc: "Torah insights delivered every morning since 2005", href: "/daily-emails" },
+  { title: "Yarchei Kallah", desc: "Free public shiurim on federal holidays", href: "/programs" },
+  { title: "Gemach Directory", desc: "700+ community chesed resources listed", href: "/gemach" },
+  { title: "Torah Resources", desc: "Hundreds of free guides, schedules, and aids", href: "/resources" },
+  { title: "Tefillin Project", desc: "Sunday outreach ensuring tefillin sanctity", href: "/programs" },
+  { title: "V'Ani Tefilah", desc: "Resources to enhance focus in tefillah", href: "/resources" },
 ];
 
 export default function AboutPage() {
@@ -24,7 +23,6 @@ export default function AboutPage() {
       <PageHeader
         title="About Hakhel"
         subtitle="A volunteer Torah organization gathering the community together since 1995."
-        icon="info"
         breadcrumb="About"
         tintClass="bg-section-about"
       />
@@ -88,9 +86,6 @@ export default function AboutPage() {
                 href={item.href}
                 className="bg-bg-pure rounded-xl p-5 border border-gray-100 shadow-sm hover:shadow-warm-lg transition-all card-accent-left group"
               >
-                <span className="inline-block p-2 rounded-lg bg-accent-bg text-accent mb-3">
-                  <Icon name={item.icon} size={18} />
-                </span>
                 <h3 className="font-semibold mb-1 group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
@@ -105,18 +100,15 @@ export default function AboutPage() {
               Get in Touch
             </h2>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-text-muted">
-              <a href="mailto:information@hakhel.info" className="flex items-center gap-2 text-primary hover:underline">
-                <Icon name="envelope" size={16} />
+              <a href="mailto:information@hakhel.info" className="text-primary hover:underline">
                 information@hakhel.info
               </a>
-              <a href="tel:+17182535497" className="flex items-center gap-2 text-primary hover:underline">
-                <Icon name="phone" size={16} />
+              <span className="text-text-muted/30 hidden sm:inline">|</span>
+              <a href="tel:+17182535497" className="text-primary hover:underline">
                 (718) 253-5497
               </a>
-              <span className="flex items-center gap-2">
-                <Icon name="mapPin" size={16} className="text-accent" />
-                Brooklyn, NY 11210
-              </span>
+              <span className="text-text-muted/30 hidden sm:inline">|</span>
+              <span>Brooklyn, NY 11210</span>
             </div>
           </div>
         </div>

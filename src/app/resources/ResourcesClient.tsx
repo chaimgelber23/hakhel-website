@@ -8,15 +8,6 @@ import Icon from "@/components/Icon";
 const categories = data.categories;
 const allCount = categories.reduce((s, c) => s + c.resources.length, 0);
 
-const iconMap: Record<string, string> = {
-  calendar: "calendar",
-  table: "table",
-  heart: "heart",
-  archive: "archive",
-  clipboard: "clipboard",
-  book: "book",
-};
-
 const categoryDescriptions: Record<string, string> = {
   calendars: "Daily and yearly Torah learning schedules — Kitzur Yomi, Daf Yomi, Mishnayos tracking",
   tables: "Quick-reference charts for halachic measurements, davening locations, and karbonos",
@@ -78,18 +69,13 @@ export default function ResourcesClient() {
                   onClick={() => setActiveCategory(cat.id)}
                   className="text-left bg-bg-pure rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-warm-lg transition-all card-accent-left group"
                 >
-                  <div className="flex items-center gap-2.5 mb-2">
-                    <span className="p-2 rounded-lg bg-accent-bg text-accent">
-                      <Icon name={iconMap[cat.icon] || "book"} size={18} />
+                  <div className="flex items-baseline justify-between gap-2 mb-2">
+                    <h3 className="font-semibold group-hover:text-primary transition-colors">
+                      {cat.label}
+                    </h3>
+                    <span className="text-xs text-text-muted shrink-0">
+                      {cat.resources.length} {cat.resources.length === 1 ? "item" : "items"}
                     </span>
-                    <div>
-                      <h3 className="font-semibold group-hover:text-primary transition-colors">
-                        {cat.label}
-                      </h3>
-                      <p className="text-xs text-text-muted">
-                        {cat.resources.length} {cat.resources.length === 1 ? "item" : "items"}
-                      </p>
-                    </div>
                   </div>
                   <p className="text-sm text-text-muted leading-relaxed mb-3">
                     {categoryDescriptions[cat.id] || ""}
@@ -156,13 +142,12 @@ export default function ResourcesClient() {
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
                     activeCategory === cat.id
                       ? "bg-primary text-white"
                       : "bg-bg-soft text-text-muted hover:bg-bg-accent"
                   }`}
                 >
-                  <Icon name={iconMap[cat.icon] || "book"} size={14} />
                   {cat.label} ({cat.resources.length})
                 </button>
               ))}
@@ -179,14 +164,9 @@ export default function ResourcesClient() {
 
             {filtered.map((cat) => (
               <div key={cat.id} className="mb-10">
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-accent">
-                    <Icon name={iconMap[cat.icon] || "book"} size={20} />
-                  </span>
-                  <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold">
-                    {cat.label}
-                  </h2>
-                </div>
+                <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold mb-4">
+                  {cat.label}
+                </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {cat.resources.map((resource) => (
                     <a

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import Icon from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Programs | Hakhel",
@@ -19,7 +18,6 @@ const programs = [
       "Free and open to the public",
       "Past recordings available on the Hakhel tape list",
     ],
-    icon: "calendar",
     accent: "card-accent-blue",
   },
   {
@@ -33,7 +31,6 @@ const programs = [
       "Special editions for Pesach, Succos, and Eruv Tavshilin",
     ],
     link: { href: "/resources", label: "Browse Bulletin Archives" },
-    icon: "clipboard",
     accent: "card-accent-gold",
   },
   {
@@ -47,7 +44,6 @@ const programs = [
       "Subscribe via Constant Contact",
     ],
     link: { href: "/daily-emails", label: "Browse Email Archives" },
-    icon: "envelope",
     accent: "card-accent-gold",
   },
   {
@@ -59,7 +55,6 @@ const programs = [
       "Educational materials and posters available",
       "Sunday community outreach programs",
     ],
-    icon: "star",
     accent: "card-accent-purple",
   },
   {
@@ -73,7 +68,6 @@ const programs = [
       "Video and audio resources from various rabbanim",
     ],
     link: { href: "/resources", label: "Browse Tefillah Resources" },
-    icon: "mic",
     accent: "card-accent-blue",
   },
   {
@@ -85,7 +79,6 @@ const programs = [
       "Practical guidance for consumers",
       "Newsletter archive available",
     ],
-    icon: "fileText",
     accent: "card-accent-green",
   },
 ];
@@ -96,7 +89,6 @@ export default function ProgramsPage() {
       <PageHeader
         title="Our Programs"
         subtitle="Bringing Torah learning and community together since 1995."
-        icon="calendar"
         breadcrumb="Programs"
         tintClass="bg-section-programs"
       />
@@ -109,14 +101,9 @@ export default function ProgramsPage() {
                 key={program.title}
                 className={`bg-bg-pure rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm ${program.accent}`}
               >
-                <div className="flex items-start gap-3 mb-4">
-                  <span className="p-2 rounded-lg bg-accent-bg text-accent shrink-0">
-                    <Icon name={program.icon} size={20} />
-                  </span>
-                  <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold">
-                    {program.title}
-                  </h2>
-                </div>
+                <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold mb-3">
+                  {program.title}
+                </h2>
                 <p className="text-text-muted leading-relaxed mb-4">
                   {program.description}
                 </p>
@@ -131,7 +118,6 @@ export default function ProgramsPage() {
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors shadow-sm"
                   >
                     {program.link.label}
-                    <Icon name="chevronRight" size={14} />
                   </Link>
                 )}
               </div>

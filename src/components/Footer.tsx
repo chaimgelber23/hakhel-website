@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Icon from "./Icon";
 
 export default function Footer() {
   return (
@@ -52,19 +51,14 @@ export default function Footer() {
             Contact
           </h4>
           <ul className="space-y-3 text-sm text-white/60">
-            <li className="flex items-center gap-2">
-              <Icon name="mapPin" size={14} className="text-accent/60" />
-              Brooklyn, NY 11210
-            </li>
+            <li>Brooklyn, NY 11210</li>
             <li>
-              <a href="mailto:information@hakhel.info" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Icon name="envelope" size={14} className="text-accent/60" />
+              <a href="mailto:information@hakhel.info" className="hover:text-accent transition-colors">
                 information@hakhel.info
               </a>
             </li>
             <li>
-              <a href="tel:+17182535497" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Icon name="phone" size={14} className="text-accent/60" />
+              <a href="tel:+17182535497" className="hover:text-accent transition-colors">
                 (718) 253-5497
               </a>
             </li>

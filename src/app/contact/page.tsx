@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
-import Icon from "@/components/Icon";
 
 export const metadata: Metadata = {
   title: "Contact | Hakhel",
@@ -13,7 +12,6 @@ export default function ContactPage() {
       <PageHeader
         title="Contact Us"
         subtitle="We'd love to hear from you. Reach out with questions, suggestions, or to get involved."
-        icon="phone"
         breadcrumb="Contact"
         tintClass="bg-bg-soft"
       />
@@ -23,48 +21,28 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-5">
               <div className="bg-bg-pure rounded-xl p-5 border border-gray-100 shadow-sm card-accent-blue">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Icon name="envelope" size={18} />
-                  </span>
-                  <h2 className="font-semibold">General Inquiries</h2>
-                </div>
-                <a href="mailto:information@hakhel.info" className="text-primary hover:underline text-sm ml-[42px]">
+                <h2 className="font-semibold mb-2">General Inquiries</h2>
+                <a href="mailto:information@hakhel.info" className="text-primary hover:underline text-sm">
                   information@hakhel.info
                 </a>
               </div>
 
               <div className="bg-bg-pure rounded-xl p-5 border border-gray-100 shadow-sm card-accent-blue">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Icon name="phone" size={18} />
-                  </span>
-                  <h2 className="font-semibold">Phone</h2>
-                </div>
-                <div className="ml-[42px] space-y-1">
+                <h2 className="font-semibold mb-2">Phone</h2>
+                <div className="space-y-1">
                   <a href="tel:+17182535497" className="text-primary hover:underline text-sm block">(718) 253-5497</a>
                   <a href="tel:+17182525274" className="text-primary hover:underline text-sm block">(718) 252-5274</a>
                 </div>
               </div>
 
               <div className="bg-bg-pure rounded-xl p-5 border border-gray-100 shadow-sm card-accent-blue">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Icon name="mapPin" size={18} />
-                  </span>
-                  <h2 className="font-semibold">Location</h2>
-                </div>
-                <p className="text-sm text-text-muted ml-[42px]">Brooklyn, NY 11210</p>
+                <h2 className="font-semibold mb-2">Location</h2>
+                <p className="text-sm text-text-muted">Brooklyn, NY 11210</p>
               </div>
 
               <div className="bg-bg-pure rounded-xl p-5 border border-gray-100 shadow-sm card-accent-gold">
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="p-2 rounded-lg bg-accent-bg text-accent">
-                    <Icon name="envelope" size={18} />
-                  </span>
-                  <h2 className="font-semibold">Email Subscription</h2>
-                </div>
-                <p className="text-sm text-text-muted mb-3 ml-[42px]">
+                <h2 className="font-semibold mb-2">Email Subscription</h2>
+                <p className="text-sm text-text-muted mb-3">
                   Subscribe to the daily email or send a message to{" "}
                   <a href="mailto:postmaster@hakhel.info" className="text-primary hover:underline">
                     postmaster@hakhel.info
@@ -74,7 +52,7 @@ export default function ContactPage() {
                   href="https://lp.constantcontactpages.com/su/opBjZAX"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-accent text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-accent-dark transition-colors ml-[42px]"
+                  className="inline-block bg-accent text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-accent-dark transition-colors"
                 >
                   Subscribe to Daily Emails
                 </a>

@@ -25,7 +25,6 @@ export default function ResourcesPage() {
       <PageHeader
         title="Torah Library"
         subtitle="Comprehensive collection of learning schedules, tefillah aids, halachic guidelines, and educational materials — all free to download and share."
-        icon="book"
         breadcrumb="Torah Library"
         tintClass="bg-section-resources"
       />

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Icon from "@/components/Icon";
 import FadeIn from "@/components/FadeIn";
 import AnimatedCounter from "@/components/AnimatedCounter";
 

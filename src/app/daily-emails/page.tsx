@@ -22,7 +22,6 @@ export default function DailyEmailsPage() {
       <PageHeader
         title="Daily Email Archives"
         subtitle="15+ years of curated Torah insights, delivered daily to thousands worldwide. Browse the archives or subscribe to receive them each morning."
-        icon="envelope"
         breadcrumb="Daily Emails"
         tintClass="bg-section-emails"
       >

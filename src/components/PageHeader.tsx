@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Icon from "./Icon";
 
 interface PageHeaderProps {
   title: string;
@@ -13,7 +12,6 @@ interface PageHeaderProps {
 export default function PageHeader({
   title,
   subtitle,
-  icon,
   breadcrumb,
   tintClass = "bg-bg-soft",
   children,
@@ -27,7 +25,7 @@ export default function PageHeader({
           <Link href="/" className="hover:text-primary transition-colors">
             Home
           </Link>
-          <Icon name="chevronRight" size={14} />
+          <span className="text-text-muted/40">/</span>
           <span className="text-text-main font-medium">{breadcrumb}</span>
         </nav>
 

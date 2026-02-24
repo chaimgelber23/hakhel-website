@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import data from "@/data/daily-emails.json";
-import Icon from "@/components/Icon";
 
 const years = data.years;
 const specialCollections = data.specialCollections;
@@ -30,15 +29,10 @@ export default function DailyEmailsClient() {
                 rel="noopener noreferrer"
                 className="bg-bg-pure rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-warm-lg transition-all card-accent-gold group"
               >
-                <div className="flex items-start gap-2 mb-1">
-                  <span className="text-accent shrink-0 mt-0.5">
-                    <Icon name="star" size={14} />
-                  </span>
-                  <h3 className="font-semibold text-sm group-hover:text-primary transition-colors">
-                    {col.title}
-                  </h3>
-                </div>
-                <p className="text-xs text-text-muted pl-[22px]">{col.description}</p>
+                <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
+                  {col.title}
+                </h3>
+                <p className="text-xs text-text-muted">{col.description}</p>
               </a>
             ))}
           </div>
@@ -84,9 +78,6 @@ export default function DailyEmailsClient() {
                   rel="noopener noreferrer"
                   className="bg-bg-pure rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-warm-lg hover:border-accent/30 transition-all text-center group"
                 >
-                  <span className="text-accent mb-2 inline-block">
-                    <Icon name="calendar" size={18} />
-                  </span>
                   <p className="font-[family-name:var(--font-heading)] font-semibold text-sm group-hover:text-primary transition-colors">
                     {m.month}
                   </p>
