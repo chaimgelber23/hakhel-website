@@ -3,7 +3,6 @@ import Link from "next/link";
 interface PageHeaderProps {
   title: string;
   subtitle: string;
-  icon?: string;
   breadcrumb: string;
   tintClass?: string;
   children?: React.ReactNode;

@@ -4,10 +4,10 @@ import FadeIn from "@/components/FadeIn";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
 const stats = [
-  { label: "Daily Email Subscribers", value: "15,000+", icon: "envelope", href: "/daily-emails" },
-  { label: "Downloadable Resources", value: "60+", icon: "download", href: "/resources" },
-  { label: "Recorded Shiurim", value: "300+", icon: "mic", href: "/shiurim" },
-  { label: "Gemach Listings", value: "700+", icon: "heart", href: "/gemach" },
+  { label: "Daily Email Subscribers", value: "15,000+", href: "/daily-emails" },
+  { label: "Downloadable Resources", value: "60+", href: "/resources" },
+  { label: "Recorded Shiurim", value: "300+", href: "/shiurim" },
+  { label: "Gemach Listings", value: "700+", href: "/gemach" },
 ];
 
 const explore = [
@@ -16,7 +16,6 @@ const explore = [
     desc: "Learning schedules, tefillah aids, brachos charts, halacha guides — all free PDFs ready to download and print.",
     href: "/resources",
     count: "60+ resources",
-    icon: "book",
     accent: "card-accent-blue",
   },
   {
@@ -24,7 +23,6 @@ const explore = [
     desc: "15+ years of curated Torah insights organized by month and year. Browse the full archive or subscribe.",
     href: "/daily-emails",
     count: "2005–2020",
-    icon: "envelope",
     accent: "card-accent-gold",
   },
   {
@@ -32,7 +30,6 @@ const explore = [
     desc: "Hundreds of Torah lectures from Hakhel events featuring prominent rabbanim, available on Torah Anytime.",
     href: "/shiurim",
     count: "300+ shiurim",
-    icon: "mic",
     accent: "card-accent-purple",
   },
   {
@@ -40,7 +37,6 @@ const explore = [
     desc: "Searchable directory of chesed resources across Brooklyn, Lakewood, Monsey, Five Towns, and beyond.",
     href: "/gemach",
     count: "700+ listings",
-    icon: "heart",
     accent: "card-accent-green",
   },
   {
@@ -48,7 +44,6 @@ const explore = [
     desc: "Yarchei Kallah, Community Bulletin, Tefillin Project, V'Ani Tefilah Foundation, and more.",
     href: "/programs",
     count: "6 programs",
-    icon: "users",
     accent: "card-accent-left",
   },
   {
@@ -56,7 +51,6 @@ const explore = [
     desc: "A volunteer organization since 1995, gathering the community together for Torah study and chesed.",
     href: "/about",
     count: "Est. 1995",
-    icon: "info",
     accent: "card-accent-blue",
   },
 ];
@@ -66,25 +60,21 @@ const initiatives = [
     title: "Yarchei Kallah",
     desc: "Free public shiurim on federal holidays featuring prominent Torah scholars.",
     href: "/programs",
-    icon: "calendar",
   },
   {
     title: "Daily Email Bulletins",
     desc: "Torah insights delivered every morning since 2005 to thousands worldwide.",
     href: "/daily-emails",
-    icon: "envelope",
   },
   {
     title: "Gemach Directory",
     desc: "700+ chesed resources across the tri-state area, searchable by category and location.",
     href: "/gemach",
-    icon: "heart",
   },
   {
     title: "Torah Anytime Shiurim",
     desc: "300+ recorded lectures from Hakhel events with 60+ contributing speakers.",
     href: "/shiurim",
-    icon: "headphones",
   },
 ];
 
@@ -167,17 +157,13 @@ export default function Home() {
                 href={item.href}
                 className={`bg-bg-pure rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-warm-lg transition-all group ${item.accent}`}
               >
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="flex-1 min-w-0">
-                    <div className="flex items-start justify-between gap-2">
-                      <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
-                        {item.title}
-                      </h3>
-                      <span className="shrink-0 text-[11px] font-medium px-2.5 py-1 rounded-full bg-accent-bg text-accent-dark">
-                        {item.count}
-                      </span>
-                    </div>
-                  </div>
+                <div className="flex items-start justify-between gap-2 mb-3">
+                  <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
+                    {item.title}
+                  </h3>
+                  <span className="shrink-0 text-[11px] font-medium px-2.5 py-1 rounded-full bg-accent-bg text-accent-dark">
+                    {item.count}
+                  </span>
                 </div>
                 <p className="text-sm text-text-muted leading-relaxed">
                   {item.desc}
@@ -249,9 +235,9 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="bg-bg-pure rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-warm-lg transition-all card-accent-left flex flex-col justify-center"
+                className="bg-bg-pure rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-warm-lg transition-all card-accent-left group"
               >
-                <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+                <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
                 <p className="text-sm text-text-muted leading-relaxed">
                   {item.desc}
                 </p>
