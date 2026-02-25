@@ -58,8 +58,8 @@ function getInitials(name: string) {
 }
 
 function searchHakhel(query: string) {
-  const encoded = encodeURIComponent(`hakhel ${query} site:torahanytime.com`);
-  window.open(`https://www.google.com/search?q=${encoded}`, "_blank");
+  const encoded = encodeURIComponent(query);
+  window.open(`https://torahanytime.com/search/lectures/${encoded}`, "_blank");
 }
 
 export default function ShiurimClient() {
@@ -109,7 +109,7 @@ export default function ShiurimClient() {
             </button>
           </form>
           <p className="text-xs text-text-muted mt-2 text-center">
-            Click a speaker or topic below to search, or type your own query
+            Click a speaker or topic below, or type your own query to search on Torah Anytime
           </p>
         </div>
       </section>
