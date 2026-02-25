@@ -27,12 +27,12 @@ export const metadata: Metadata = {
 };
 
 const featuredSpeakers = [
-  { name: "R' Dovid Goldwasser", topic: "Inspiration & Mussar", initials: "DG" },
-  { name: "R' Mordechai Finkelman", topic: "Hashkafah & Parasha", initials: "MF" },
-  { name: "R' Zev Smith", topic: "Halacha & Daily Living", initials: "ZS" },
-  { name: "R' Doniel Osher Kleinman", topic: "Torah Study", initials: "DK" },
-  { name: "R' Yosef Eisen", topic: "Practical Halacha", initials: "YE" },
-  { name: "R' Daniel Glatstein", topic: "In-Depth Parasha", initials: "DG" },
+  { name: "R' Dovid Goldwasser", topic: "Inspiration & Mussar", initials: "DG", url: "https://torahanytime.com/speakers/34" },
+  { name: "R' Mordechai Finkelman", topic: "Hashkafah & Parasha", initials: "MF", url: "https://torahanytime.com/speakers/91" },
+  { name: "R' Zev Smith", topic: "Halacha & Daily Living", initials: "ZS", url: "https://torahanytime.com/speakers/164" },
+  { name: "R' Doniel Osher Kleinman", topic: "Torah Study", initials: "DK", url: "https://torahanytime.com/speakers/645" },
+  { name: "R' Yosef Eisen", topic: "Practical Halacha", initials: "YE", url: "https://torahanytime.com/speakers/605" },
+  { name: "R' Daniel Glatstein", topic: "In-Depth Parasha", initials: "DG", url: "https://torahanytime.com/speakers/105" },
 ];
 
 const speakerColors = [
@@ -54,18 +54,18 @@ const topicColors = [
 ];
 
 const topics = [
-  "Parasha & Chumash",
-  "Halacha & Jewish Law",
-  "Mussar & Self-Improvement",
-  "Tefillah & Spirituality",
-  "Yomim Tovim & Holidays",
-  "Shabbos",
-  "Kashrus",
-  "Marriage & Family",
-  "Emunah & Bitachon",
-  "Daf Yomi & Gemara",
-  "Navi & Tanach",
-  "Community & Chesed",
+  { label: "Parasha & Chumash", url: "https://torahanytime.com/topics/23" },
+  { label: "Halacha & Jewish Law", url: "https://torahanytime.com/topics" },
+  { label: "Mussar & Self-Improvement", url: "https://torahanytime.com/topics" },
+  { label: "Tefillah & Spirituality", url: "https://torahanytime.com/topics/107" },
+  { label: "Yomim Tovim & Holidays", url: "https://torahanytime.com/topics/8" },
+  { label: "Shabbos", url: "https://torahanytime.com/topics/7" },
+  { label: "Kashrus", url: "https://torahanytime.com/topics" },
+  { label: "Marriage & Family", url: "https://torahanytime.com/topics" },
+  { label: "Emunah & Bitachon", url: "https://torahanytime.com/topics" },
+  { label: "Daf Yomi & Gemara", url: "https://torahanytime.com/topics/18" },
+  { label: "Navi & Tanach", url: "https://torahanytime.com/topics" },
+  { label: "Community & Chesed", url: "https://torahanytime.com/topics" },
 ];
 
 export default function ShiurimPage() {
@@ -110,18 +110,21 @@ export default function ShiurimPage() {
           <div className="w-10 h-0.5 bg-accent mb-6 rounded-full" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {featuredSpeakers.map((speaker, i) => (
-              <div
+              <a
                 key={speaker.name}
-                className="bg-bg-pure rounded-xl p-4 border border-gray-100 shadow-sm flex items-center gap-3"
+                href={speaker.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-bg-pure rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-warm-lg transition-all flex items-center gap-3 group"
               >
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold ${speakerColors[i % speakerColors.length]}`}>
                   {speaker.initials}
                 </div>
                 <div>
-                  <p className="font-semibold text-sm">{speaker.name}</p>
+                  <p className="font-semibold text-sm group-hover:text-primary transition-colors">{speaker.name}</p>
                   <p className="text-xs text-text-muted">{speaker.topic}</p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -134,12 +137,15 @@ export default function ShiurimPage() {
           <div className="w-10 h-0.5 bg-accent mb-6 rounded-full" />
           <div className="flex flex-wrap gap-2">
             {topics.map((topic, i) => (
-              <span
-                key={topic}
-                className={`px-4 py-2 rounded-full text-sm border ${topicColors[i % topicColors.length]}`}
+              <a
+                key={topic.label}
+                href={topic.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`px-4 py-2 rounded-full text-sm border hover:shadow-warm transition-all cursor-pointer ${topicColors[i % topicColors.length]}`}
               >
-                {topic}
-              </span>
+                {topic.label}
+              </a>
             ))}
           </div>
         </div>
