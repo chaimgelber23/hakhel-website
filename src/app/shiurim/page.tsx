@@ -31,18 +31,18 @@ export const metadata: Metadata = {
 const HAKHEL_PAGE = "https://torahanytime.com/organizations/41";
 
 const featuredSpeakers = [
-  { name: "R' Dovid Goldwasser", topic: "Inspiration & Mussar", id: 34 },
-  { name: "R' Yisroel Reisman", topic: "Halacha & Hashkafa", id: 327 },
-  { name: "R' Daniel Glatstein", topic: "In-Depth Parasha", id: 105 },
-  { name: "R' Asher Weiss", topic: "Halacha & Lomdus", id: 860 },
-  { name: "R' Noach Isaac Oelbaum", topic: "Hashkafa & Parasha", id: 59 },
-  { name: "R' Eytan Feiner", topic: "Inspiration & Growth", id: 46 },
-  { name: "R' Zev Smith", topic: "Halacha & Daily Living", id: 164 },
-  { name: "R' Mordechai Finkelman", topic: "Hashkafa & Mussar", id: 91 },
-  { name: "R' Fischel Schachter", topic: "Inspiration", id: 115 },
-  { name: "R' Avraham Schorr", topic: "Mussar & Avodah", id: 156 },
-  { name: "R' Doniel Osher Kleinman", topic: "Practical Halacha", id: 645 },
-  { name: "R' Yosef Eisen", topic: "Practical Halacha", id: 605 },
+  { name: "R' Dovid Goldwasser", topic: "Inspiration & Mussar" },
+  { name: "R' Yisroel Reisman", topic: "Halacha & Hashkafa" },
+  { name: "R' Daniel Glatstein", topic: "In-Depth Parasha" },
+  { name: "R' Asher Weiss", topic: "Halacha & Lomdus" },
+  { name: "R' Noach Isaac Oelbaum", topic: "Hashkafa & Parasha" },
+  { name: "R' Eytan Feiner", topic: "Inspiration & Growth" },
+  { name: "R' Zev Smith", topic: "Halacha & Daily Living" },
+  { name: "R' Mordechai Finkelman", topic: "Hashkafa & Mussar" },
+  { name: "R' Fischel Schachter", topic: "Inspiration" },
+  { name: "R' Avraham Schorr", topic: "Mussar & Avodah" },
+  { name: "R' Doniel Osher Kleinman", topic: "Practical Halacha" },
+  { name: "R' Yosef Eisen", topic: "Practical Halacha" },
 ];
 
 const speakerColors = [
@@ -121,25 +121,22 @@ export default function ShiurimPage() {
       <section className="px-6 py-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-[family-name:var(--font-heading)] text-xl font-bold mb-2">Featured Speakers</h2>
-          <p className="text-sm text-text-muted mb-1">Some of the rabbanim who have spoken at Hakhel events. Click to view their shiurim.</p>
+          <p className="text-sm text-text-muted mb-1">Some of the rabbanim who have spoken at Hakhel events.</p>
           <div className="w-10 h-0.5 bg-accent mb-6 rounded-full" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {featuredSpeakers.map((speaker, i) => (
-              <a
+              <div
                 key={speaker.name}
-                href={`https://torahanytime.com/speakers/${speaker.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-bg-pure rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-warm-lg transition-all flex items-center gap-3 group"
+                className="bg-bg-pure rounded-xl p-4 border border-gray-100 shadow-sm flex items-center gap-3"
               >
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold shrink-0 ${speakerColors[i % speakerColors.length]}`}>
                   {getInitials(speaker.name)}
                 </div>
                 <div className="min-w-0">
-                  <p className="font-semibold text-sm group-hover:text-primary transition-colors">{speaker.name}</p>
+                  <p className="font-semibold text-sm">{speaker.name}</p>
                   <p className="text-xs text-text-muted">{speaker.topic}</p>
                 </div>
-              </a>
+              </div>
             ))}
           </div>
           <div className="mt-6 text-center">
@@ -147,9 +144,9 @@ export default function ShiurimPage() {
               href={HAKHEL_PAGE}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-primary font-medium hover:underline"
+              className="inline-block bg-primary text-white px-6 py-2.5 rounded-xl text-sm font-medium hover:bg-primary-dark transition-colors"
             >
-              View all 59 speakers on Torah Anytime
+              Listen to All Hakhel Shiurim
             </a>
           </div>
         </div>
