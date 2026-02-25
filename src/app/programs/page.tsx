@@ -3,8 +3,23 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Programs | Hakhel",
-  description: "Hakhel's programs: Yarchei Kallah, Community Bulletin, Tefillin Project, V'Ani Tefilah Foundation, and more.",
+  title: "Programs — Yarchei Kallah, Daily Emails, Tefillin Project & More",
+  description:
+    "Explore Hakhel's Torah programs: Yarchei Kallah holiday shiurim, daily email bulletins to 15,000+ subscribers, Community Awareness Bulletin, Tefillin Awareness Project, V'Ani Tefilah Foundation, and Shatnez Newsletter.",
+  keywords: [
+    "Yarchei Kallah",
+    "Hakhel programs",
+    "Tefillin Awareness Project",
+    "V'Ani Tefilah Foundation",
+    "Community Awareness Bulletin",
+    "Shatnez newsletter",
+    "Torah programs Brooklyn",
+  ],
+  openGraph: {
+    title: "Hakhel Programs — Yarchei Kallah, Daily Emails & More",
+    description:
+      "Yarchei Kallah holiday shiurim, daily Torah emails, Tefillin Project, V'Ani Tefilah Foundation, and more community programs.",
+  },
 };
 
 const programs = [

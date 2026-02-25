@@ -4,8 +4,23 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "About | Hakhel",
-  description: "Learn about Hakhel - a non-profit volunteer organization dedicated to Torah education since 1995.",
+  title: "About Hakhel — Torah Education Organization Since 1995",
+  description:
+    "Hakhel is a non-profit volunteer organization in Flatbush, Brooklyn dedicated to Torah study, chesed, and community education since 1995. Learn about our mission, programs, and leadership.",
+  keywords: [
+    "Hakhel",
+    "about Hakhel",
+    "Torah organization",
+    "Flatbush Brooklyn",
+    "Jewish non-profit",
+    "Torah education",
+    "volunteer organization",
+  ],
+  openGraph: {
+    title: "About Hakhel — Torah Education Organization Since 1995",
+    description:
+      "A non-profit volunteer organization in Flatbush, Brooklyn dedicated to Torah study, chesed, and community education since 1995.",
+  },
 };
 
 const whatWeDo = [

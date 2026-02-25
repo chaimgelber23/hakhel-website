@@ -3,9 +3,9 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Shiurim & Recordings | Hakhel",
+  title: "300+ Torah Shiurim & Recordings — Hakhel on Torah Anytime",
   description:
-    "Access 300+ Torah shiurim and recordings from Hakhel events on Torah Anytime. Featuring prominent speakers on halacha, mussar, parasha, tefillah, and more.",
+    "Access 300+ free Torah shiurim and recordings from Hakhel events on Torah Anytime. Featuring R' Dovid Goldwasser, R' Zev Smith, R' Daniel Glatstein, and 60+ speakers on halacha, mussar, parasha, and tefillah.",
   keywords: [
     "Torah shiurim",
     "Torah lectures",
@@ -13,7 +13,17 @@ export const metadata: Metadata = {
     "Torah Anytime",
     "Yarchei Kallah recordings",
     "Jewish lectures",
+    "free Torah classes",
+    "R' Dovid Goldwasser",
+    "R' Zev Smith",
+    "halacha shiur",
+    "mussar shiur",
   ],
+  openGraph: {
+    title: "300+ Torah Shiurim & Recordings — Hakhel on Torah Anytime",
+    description:
+      "Free Torah shiurim from 60+ speakers. Halacha, mussar, parasha, tefillah, and more from Hakhel events.",
+  },
 };
 
 const featuredSpeakers = [

@@ -3,19 +3,29 @@ import GemachClient from "./GemachClient";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Community Gemach Directory | Hakhel",
+  title: "700+ Gemach Directory — Free-Loan Services in Brooklyn, Lakewood & More",
   description:
-    "Search hundreds of gemach (free-loan) services across the tri-state area. Find equipment loans, clothing, food, medical supplies, and more.",
+    "Search 700+ gemach (free-loan) services across Brooklyn, Queens, Five Towns, Monsey, and Lakewood. Find baby equipment, wedding gowns, food, clothing, medical supplies, seforim, and chesed resources by category and location.",
   keywords: [
     "gemach directory",
     "gemach list",
-    "free loan",
-    "chesed",
+    "free loan Jewish",
+    "chesed resources",
     "Brooklyn gemach",
-    "Flatbush",
-    "Lakewood",
-    "Jewish community resources",
+    "Flatbush gemach",
+    "Lakewood gemach",
+    "Monsey gemach",
+    "Five Towns gemach",
+    "wedding gemach",
+    "baby equipment gemach",
+    "clothing gemach",
+    "food gemach",
   ],
+  openGraph: {
+    title: "700+ Gemach Directory — Free-Loan Services",
+    description:
+      "Search 700+ gemach services across the tri-state area. Baby equipment, wedding supplies, food, clothing, medical, and more.",
+  },
 };
 
 export default function GemachPage() {

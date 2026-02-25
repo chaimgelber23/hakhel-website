@@ -3,17 +3,26 @@ import DailyEmailsClient from "./DailyEmailsClient";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Daily Email Archives | Hakhel",
+  title: "Daily Torah Email Archives (2005–2020) — 15,000+ Subscribers",
   description:
-    "Browse 15+ years of curated Torah insights from Hakhel's daily email bulletins, delivered to over 15,000 subscribers worldwide since 2005.",
+    "Browse 15+ years of curated daily Torah insights from Hakhel's email bulletins. Halacha, hashkafa, mussar, minhagim, and more — delivered to 15,000+ subscribers worldwide since 2005. Subscribe free or browse the full archive.",
   keywords: [
     "daily Torah email",
     "Hakhel emails",
-    "Torah insights",
-    "daily inspiration",
+    "Torah insights daily",
     "Jewish daily email",
     "Torah bulletin",
+    "subscribe Torah email",
+    "halacha email",
+    "hashkafa",
+    "mussar daily",
+    "Torah inspiration",
   ],
+  openGraph: {
+    title: "Daily Torah Email Archives (2005–2020) — Hakhel",
+    description:
+      "15+ years of curated Torah insights delivered daily to 15,000+ subscribers. Browse the archive or subscribe free.",
+  },
 };
 
 export default function DailyEmailsPage() {

@@ -4,19 +4,28 @@ import ResourcesClient from "./ResourcesClient";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Torah Library | Hakhel",
+  title: "Free Torah Library — 60+ PDFs, Schedules, Tefillah Aids & Charts",
   description:
-    "Free downloadable Torah learning schedules, tefillah aids, halachic guidelines, reference charts, and educational materials from Hakhel.",
+    "Download 60+ free Torah resources: Kitzur Yomi and Daf Yomi schedules, Shemone Esrei kavanos, brachos charts, halachic guidelines, tefillah aids, and reference tables from Hakhel.",
   keywords: [
     "Torah resources",
+    "free Torah PDF",
     "learning schedule",
     "Kitzur Yomi",
     "Daf Yomi",
     "tefillah aids",
     "halacha guides",
     "brachos chart",
-    "Hakhel",
+    "Shemone Esrei",
+    "kavanos",
+    "Torah download",
+    "Hakhel resources",
   ],
+  openGraph: {
+    title: "Free Torah Library — 60+ PDFs, Schedules & Tefillah Aids",
+    description:
+      "Download 60+ free Torah resources: learning schedules, tefillah aids, brachos charts, halachic guidelines, and more.",
+  },
 };
 
 export default function ResourcesPage() {

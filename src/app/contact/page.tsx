@@ -2,8 +2,22 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "Contact | Hakhel",
-  description: "Contact Hakhel - reach out for questions, subscriptions, or to contribute to our programs.",
+  title: "Contact Hakhel — Get in Touch, Subscribe, or Donate",
+  description:
+    "Contact Hakhel in Brooklyn, NY. Subscribe to daily Torah emails, support our programs, submit a gemach listing, or reach out with questions. Phone: 718-523-3636.",
+  keywords: [
+    "contact Hakhel",
+    "Hakhel Brooklyn",
+    "Hakhel phone number",
+    "Hakhel email",
+    "subscribe Torah emails",
+    "donate Hakhel",
+  ],
+  openGraph: {
+    title: "Contact Hakhel — Get in Touch, Subscribe, or Donate",
+    description:
+      "Contact Hakhel in Brooklyn, NY. Subscribe to daily Torah emails, support our programs, or reach out with questions.",
+  },
 };
 
 export default function ContactPage() {
