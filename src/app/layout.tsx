@@ -3,6 +3,7 @@ import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -84,7 +85,7 @@ const jsonLd = {
       name: "Hakhel",
       publisher: { "@id": "https://hakhel.info/#organization" },
       description:
-        "Torah resources, daily email archives, 300+ shiurim, 700+ gemach listings, and community programs — all free.",
+        "Torah resources, daily email archives, 300+ shiurim, 500+ gemach listings, and community programs — all free.",
     },
     {
       "@type": "ItemList",
@@ -109,7 +110,7 @@ const jsonLd = {
           position: 3,
           name: "Community Gemach Directory",
           url: "https://hakhel.info/gemach",
-          description: "700+ free-loan services across Brooklyn, Lakewood, Monsey, Five Towns, and Queens.",
+          description: "500+ free-loan services across Brooklyn, Lakewood, Monsey, Five Towns, and Queens.",
         },
         {
           "@type": "ListItem",
@@ -147,6 +148,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

@@ -3,9 +3,9 @@ import GemachClient from "./GemachClient";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
-  title: "700+ Gemach Directory — Free-Loan Services in Brooklyn, Lakewood & More",
+  title: "500+ Gemach Directory — Free-Loan Services in Brooklyn, Lakewood & More",
   description:
-    "Search 700+ gemach (free-loan) services across Brooklyn, Queens, Five Towns, Monsey, and Lakewood. Find baby equipment, wedding gowns, food, clothing, medical supplies, seforim, and chesed resources by category and location.",
+    "Search 500+ gemach (free-loan) services across Brooklyn, Queens, Five Towns, Monsey, and Lakewood. Find baby equipment, wedding gowns, food, clothing, medical supplies, seforim, and chesed resources by category and location.",
   keywords: [
     "gemach directory",
     "gemach list",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     "food gemach",
   ],
   openGraph: {
-    title: "700+ Gemach Directory — Free-Loan Services",
+    title: "500+ Gemach Directory — Free-Loan Services",
     description:
-      "Search 700+ gemach services across the tri-state area. Baby equipment, wedding supplies, food, clothing, medical, and more.",
+      "Search 500+ gemach services across the tri-state area. Baby equipment, wedding supplies, food, clothing, medical, and more.",
   },
 };
 

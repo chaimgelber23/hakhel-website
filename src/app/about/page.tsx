@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const whatWeDo = [
   { title: "Daily Email Bulletins", desc: "Torah insights delivered every morning since 2005", href: "/daily-emails" },
   { title: "Yarchei Kallah", desc: "Free public shiurim on federal holidays", href: "/programs" },
-  { title: "Gemach Directory", desc: "700+ community chesed resources listed", href: "/gemach" },
+  { title: "Gemach Directory", desc: "500+ community chesed resources listed", href: "/gemach" },
   { title: "Torah Resources", desc: "Hundreds of free guides, schedules, and aids", href: "/resources" },
   { title: "Tefillin Project", desc: "Sunday outreach ensuring tefillin sanctity", href: "/programs" },
   { title: "V'Ani Tefilah", desc: "Resources to enhance focus in tefillah", href: "/resources" },

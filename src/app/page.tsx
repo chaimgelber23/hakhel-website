@@ -7,7 +7,7 @@ const stats = [
   { label: "Daily Email Subscribers", value: "15,000+", href: "/daily-emails" },
   { label: "Downloadable Resources", value: "60+", href: "/resources" },
   { label: "Recorded Shiurim", value: "300+", href: "/shiurim" },
-  { label: "Gemach Listings", value: "700+", href: "/gemach" },
+  { label: "Gemach Listings", value: "500+", href: "/gemach" },
 ];
 
 const explore = [
@@ -36,7 +36,7 @@ const explore = [
     title: "Gemach Directory",
     desc: "Searchable directory of chesed resources across Brooklyn, Lakewood, Monsey, Five Towns, and beyond.",
     href: "/gemach",
-    count: "700+ listings",
+    count: "500+ listings",
     accent: "card-accent-green",
   },
   {
@@ -68,7 +68,7 @@ const initiatives = [
   },
   {
     title: "Gemach Directory",
-    desc: "700+ chesed resources across the tri-state area, searchable by category and location.",
+    desc: "500+ chesed resources across the tri-state area, searchable by category and location.",
     href: "/gemach",
   },
   {

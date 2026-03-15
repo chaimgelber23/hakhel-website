@@ -16,7 +16,7 @@ const categoryGroups = [
   },
   {
     title: "Wedding & Simcha",
-    ids: ["wedding-gowns", "wedding-makeup", "wedding-headpieces", "wedding-shoes", "wedding-capes", "wedding-chuppah", "wedding-shtick", "wedding-misc", "simcha-gowns", "simcha-jewelry", "simcha-shabbos", "simcha-centerpieces", "simcha-tablecloths", "simcha-flowers", "simcha-tables", "simcha-misc"],
+    ids: ["wedding-gowns", "wedding-makeup", "wedding-headpieces", "wedding-shoes", "wedding-capes", "wedding-chuppah", "wedding-shtick", "wedding-misc", "simcha-gowns", "simcha-jewelry", "simcha-shabbos", "simcha-centerpieces", "simcha-tablecloths", "simcha-flowers", "simcha-tables", "simcha-misc", "shidduchim"],
   },
   {
     title: "Essentials",
@@ -24,7 +24,7 @@ const categoryGroups = [
   },
   {
     title: "Support & Services",
-    ids: ["support", "hotlines", "services", "seforim"],
+    ids: ["support", "hotlines", "services", "seforim", "bais-avel", "shiurim-phone"],
   },
 ];
 
@@ -219,7 +219,7 @@ export default function GemachClient() {
         </div>
       </section>
 
-      {/* Mobile filter panel (toggle) */}
+      {/* Mobile filter panel (toggle) - clean dropdowns */}
       <AnimatePresence>
         {showFilters && (
           <motion.section
@@ -228,69 +228,55 @@ export default function GemachClient() {
             exit={{ height: 0, opacity: 0 }}
             className="md:hidden overflow-hidden px-6"
           >
-            <div className="max-w-6xl mx-auto pb-4">
-              {/* Location filter */}
-              <div className="mb-4">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2">
+            <div className="max-w-xl mx-auto pb-4 space-y-3">
+              {/* Location dropdown */}
+              <div>
+                <label htmlFor="mobile-location" className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-1.5 block">
                   Location
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <button
-                    onClick={() => setSelectedLocation("all")}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors border ${
-                      selectedLocation === "all"
-                        ? "bg-primary text-white border-primary"
-                        : "bg-bg-soft text-text-muted hover:bg-bg-accent border-gray-200"
-                    }`}
-                  >
-                    All
-                  </button>
+                </label>
+                <select
+                  id="mobile-location"
+                  value={selectedLocation}
+                  onChange={(e) => setSelectedLocation(e.target.value)}
+                  className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-bg-soft text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all appearance-none"
+                  style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E")`, backgroundRepeat: "no-repeat", backgroundPosition: "right 12px center" }}
+                >
+                  <option value="all">All Locations</option>
                   {locations.map((loc) => (
-                    <button
-                      key={loc.id}
-                      onClick={() => setSelectedLocation(loc.id)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors border ${
-                        selectedLocation === loc.id
-                          ? "bg-primary text-white border-primary"
-                          : "bg-bg-soft text-text-muted hover:bg-bg-accent border-gray-200"
-                      }`}
-                    >
-                      {loc.label}
-                    </button>
+                    <option key={loc.id} value={loc.id}>
+                      {loc.label} ({locationCounts[loc.id] || 0})
+                    </option>
                   ))}
-                </div>
+                </select>
               </div>
 
-              {/* Category filter */}
-              <div className="mb-2">
-                <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2">
+              {/* Category dropdown - grouped with optgroups */}
+              <div>
+                <label htmlFor="mobile-category" className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-1.5 block">
                   Category
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <button
-                    onClick={() => setSelectedCategory("all")}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors border ${
-                      selectedCategory === "all"
-                        ? "bg-accent text-white border-accent"
-                        : "bg-bg-soft text-text-muted hover:bg-bg-accent border-gray-200"
-                    }`}
-                  >
-                    All
-                  </button>
-                  {categories.map((cat) => (
-                    <button
-                      key={cat.id}
-                      onClick={() => setSelectedCategory(cat.id)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors border ${
-                        selectedCategory === cat.id
-                          ? "bg-accent text-white border-accent"
-                          : "bg-bg-soft text-text-muted hover:bg-bg-accent border-gray-200"
-                      }`}
-                    >
-                      {cat.label}
-                    </button>
+                </label>
+                <select
+                  id="mobile-category"
+                  value={selectedCategory}
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                  className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-bg-soft text-sm focus:outline-none focus:ring-2 focus:ring-accent/30 focus:border-accent transition-all appearance-none"
+                  style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E")`, backgroundRepeat: "no-repeat", backgroundPosition: "right 12px center" }}
+                >
+                  <option value="all">All Categories</option>
+                  {categoryGroups.map((group) => (
+                    <optgroup key={group.title} label={group.title}>
+                      {group.ids.map((id) => {
+                        const cat = categories.find((c) => c.id === id);
+                        if (!cat) return null;
+                        return (
+                          <option key={id} value={id}>
+                            {cat.label} ({categoryCounts[id] || 0})
+                          </option>
+                        );
+                      })}
+                    </optgroup>
                   ))}
-                </div>
+                </select>
               </div>
             </div>
           </motion.section>
