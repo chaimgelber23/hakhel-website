@@ -31,6 +31,7 @@ export default function ResourcesClient() {
   useEffect(() => {
     const param = searchParams.get("category");
     if (param && categories.some((c) => c.id === param)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- benign URL-sync: mirror ?category= into local state
       setActiveCategory(param);
     }
   }, [searchParams]);
